@@ -1,0 +1,14 @@
+include ../vars.pug
+
+doctype html
+html(lang="ru")
+    include ../partials/head.pug
+    body
+        a.skip-link(href="#main-content") К основному контенту
+
+        include ../partials/header.pug
+
+        h1.heading-first-lvl= $h1
+        block content
+
+        include ../partials/footer.pug

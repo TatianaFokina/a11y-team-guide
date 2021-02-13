@@ -1,0 +1,52 @@
+extends ../templates/main-page.pug
+
+//- Variables for title, description and h1
+block vars
+	- let $h1 = "Гайды по доступности для команд"
+	- let $title = $h1
+	- let $description = "Рекомендации и советы по цифровой доступности для команд разработчиков и дизайнеров."
+
+block content
+	main(id="main-content").main
+		// TODO Maybe add classes for p
+		p Привет! 👋 Ты разработчик или дизайнер и задумываешься о доступности своего продукта? Тогда этот гайд может тебе с этим помочь. Здесь собраны базовые рекомендации и советы о том, на что обращать внимание при разработке сайтов. Например, какой размер шрифта выбирать, что там с требованиями по контрастности или как скрывать элементы доступно.
+		p Если хочешь глубже погрузиться в тему доступности или составить гайд для себя или коллег, то советую заглянуть в список ссылок на другие ресурсы.
+
+	.guides
+		a.guide-card(href="/devs") Для разработчиков
+		a.guide-card(href="/designers") Для дизайнеров
+
+	.extra-guides
+
+		//- Mixins
+		mixin list($headingName)
+			h3.heading-third-lvl= $headingName
+			ul.extra-guides__list
+				block
+
+		mixin extraGuide($href, $linkName, $linkInformation)
+			li.extra-guides__list-item
+				if ($linkInformation)
+					a.extra-guides__list-item-link(href= $href target="_blank" rel="noopener noreferrer")= $linkName
+					span= ", " + $linkInformation
+				else
+					a.extra-guides__list-item-link(href= $href target="_blank" rel="noopener noreferrer")= $linkName
+
+		h2.heading-second-lvl Другие гайды
+		+list("Общие")
+			+extraGuide($href="https://accessibility.digital.gov", $linkName="Accessibility for Teams", $linkInformation="U.S. General Services Administration")
+			+extraGuide($href="https://accessibility-handbook.mybluemix.net/design/a11y-handbook/", $linkName="IBM Accessibility Handbook")
+
+		+list("По разработке")
+			+extraGuide($href="https://accessibility.18f.gov", $linkName="18F Accessibility Guide")
+			+extraGuide($href="https://web.dev/accessible/", $linkName="Accessible to all", $linkInformation="Google")
+			+extraGuide($href="https://www.accessibility-developer-guide.com", $linkName="Accessibility Developer Guide", $linkInformation="Access for All")
+			+extraGuide($href="http://web-accessibility.carnegiemuseums.org", $linkName="Web Accessibility Guidelines v1.0", $linkInformation="The Studio")
+
+		+list("По дизайну")
+		ul.extra-guides__list
+			+extraGuide($href="https://a11y-style-guide.com/style-guide/", $linkName="A11Y Style Guide")
+			+extraGuide($href="https://material.io/design/usability/accessibility.html", $linkName="Material Accessibility Design")
+			+extraGuide($href="https://www.microsoft.com/design/inclusive/", $linkName="Microsoft Inclusive Design")
+			+extraGuide($href="https://ukhomeoffice.github.io/accessibility-posters/", $linkName="Designing Accessible Services", $linkInformation="Home Office Digital")
+			+extraGuide($href="https://github.com/UKHomeOffice/posters/blob/master/accessibility/design-accessible-services/FINAL-Designing-accessible-services-posters-set.pdf", $linkName="Designing Accessible Services Posters", $linkInformation="Home Office Digital")
