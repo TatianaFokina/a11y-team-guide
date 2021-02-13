@@ -1,0 +1,29 @@
+{
+  "name": "a11y-teams-guides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "rimraf test && parcel src/pug/content/**/*.pug --no-source-maps --no-cache --log-level 4 --out-dir test",
+    "build": "rimraf public && parcel build src/pug/content/**/*.pug --no-source-maps --no-cache --no-minify --out-dir public"
+  },
+  "author": "Tatiana Fokina",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-custom-dist-structure": "^1.1.16",
+    "pug": "^3.0.0",
+    "sass": "^1.32.7"
+  },
+  "customDistStructure": {
+    "config": {
+      ".css": "css",
+      ".js": "js",
+      "images": [
+        ".jpg",
+        ".svg",
+        ".png"
+      ]
+    }
+  }
+}
