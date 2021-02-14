@@ -2,13 +2,14 @@ include ../vars.pug
 
 doctype html
 html(lang="ru")
-    include ../partials/head.pug
-    body
-        a.skip-link(href="#main-content") К основному контенту
+	include ../partials/head.pug
+	body
+		include ../partials/header.pug
 
-        include ../partials/header.pug
+		include ../partials/color-scheme-buttons
 
-        h1.heading-first-lvl= $h1
-        block content
+		main(id="main-content")
+			h1.heading-first-lvl= $h1
+			block content
 
-        include ../partials/footer.pug
+		include ../partials/footer.pug

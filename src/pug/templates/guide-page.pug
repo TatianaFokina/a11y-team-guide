@@ -2,11 +2,14 @@ include ../vars.pug
 
 doctype html
 html(lang="ru")
-    include ../partials/head.pug
-    body
-        include ../partials/header.pug
+	include ../partials/head.pug
+	body
+		include ../partials/header.pug
 
-        h1.heading-first-lvl= $h1
-        block content
+		include ../partials/color-scheme-buttons
 
-        include ../partials/footer.pug
+		main(id="main-content")
+			h1.heading-first-lvl= $h1
+			block content
+
+		include ../partials/footer.pug
