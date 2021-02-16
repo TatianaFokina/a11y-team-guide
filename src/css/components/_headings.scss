@@ -1,0 +1,22 @@
+@import "../_variables.scss";
+
+.heading-first-lvl {
+	margin-top: 40px;
+	margin-bottom: 24px;
+	
+	font-size: $font-size-xxl;
+}
+
+.heading-second-lvl {
+	margin-top: 32px;
+	margin-bottom: 16px;
+	
+	font-size: $font-size-xl;
+}
+
+.heading-third-lvl {
+	margin-top: 24px;
+	margin-bottom: 16px;
+	
+	font-size: $font-size-lg;
+}
