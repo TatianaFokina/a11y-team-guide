@@ -1,0 +1,10 @@
+@import "../_variables.scss";
+
+.container {
+	width: 100%;
+	max-width: map-get($container-widths, xl);
+	
+	margin: 0 auto;
+	padding-left: 32px;
+	padding-right: 32px;
+}

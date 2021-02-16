@@ -1,0 +1,30 @@
+@import "../_variables.scss";
+
+html {
+	font-size: $font-size-root;
+	
+	background-color: $white;
+}
+
+body {
+	//- Sticky footer
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	
+	margin: 0;
+	
+	font-family: "IBM Plex Sans", sans-serif;
+	line-height: $line-height;
+	font-size: $font-size-base;
+	color: $text-color;
+}
+
+.content {
+	//- Sticky footer
+	flex: 1 0 auto;
+}
+
+code {
+	font-family: "IBM Plex Mono", monospace;
+}
