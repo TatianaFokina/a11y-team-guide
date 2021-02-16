@@ -1,22 +1,48 @@
 @import "../_variables.scss";
 
+$heading-separator-h: 4px;
+$first-heading-w: 58px;
+$second-heading-w: 34px;
+
+.heading-first-lvl,
+.heading-second-lvl {
+	&:before {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		
+		height: $heading-separator-h;
+		margin-right: $gap-1x;
+		
+		background: $accent-color;
+	}
+}
+
 .heading-first-lvl {
-	margin-top: 40px;
-	margin-bottom: 24px;
+	margin-top: $gap-5x;
+	margin-bottom: $gap-3x;
 	
 	font-size: $font-size-xxl;
+	
+	&:before {
+		width: $first-heading-w;
+	}
 }
 
 .heading-second-lvl {
-	margin-top: 32px;
-	margin-bottom: 16px;
+	margin-top: $gap-4x;
+	margin-bottom: $gap-2x;
 	
 	font-size: $font-size-xl;
+	
+	&:before {
+		width: $first-heading-w;
+	}
 }
 
 .heading-third-lvl {
-	margin-top: 24px;
-	margin-bottom: 16px;
+	margin-top: $gap-3x;
+	margin-bottom: $gap-2x;
 	
 	font-size: $font-size-lg;
 }

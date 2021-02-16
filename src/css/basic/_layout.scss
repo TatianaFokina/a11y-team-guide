@@ -3,7 +3,7 @@
 html {
 	font-size: $font-size-root;
 	
-	background-color: $white;
+	background-color: $bg-color-main;
 }
 
 body {
@@ -14,15 +14,29 @@ body {
 	
 	margin: 0;
 	
-	font-family: "IBM Plex Sans", sans-serif;
-	line-height: $line-height;
 	font-size: $font-size-base;
+	line-height: $line-height;
 	color: $text-color;
+}
+
+body,
+small {
+	font-family: "IBM Plex Sans", sans-serif;
 }
 
 .content {
 	//- Sticky footer
 	flex: 1 0 auto;
+	
+	margin-top: $gap-6x;
+}
+
+.extra-guides {
+	margin-top: $gap-9x;
+}
+
+small {
+	font-size: $font-size-sm;
 }
 
 code {

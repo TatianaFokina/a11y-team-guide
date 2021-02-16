@@ -5,6 +5,11 @@
 	max-width: map-get($container-widths, xl);
 	
 	margin: 0 auto;
-	padding-left: 32px;
-	padding-right: 32px;
+	padding-left: $gap-4x;
+	padding-right: $gap-4x;
+}
+
+.toggle-container {
+	display: flex;
+	justify-content: flex-end;
 }
