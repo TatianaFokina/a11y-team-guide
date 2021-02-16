@@ -1,0 +1,23 @@
+@import "../_variables.scss";
+
+.footer {
+	font-size: $font-size-sm;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	padding-top: $gap-4x;
+	padding-bottom: $gap-4x;
+}
+
+.copyright,
+.rights {
+	margin-bottom: $gap-1x;
+}
+
+.github-link-wrp {
+	margin-top: $gap-2x;
+}

@@ -1,0 +1,49 @@
+@import "../_variables.scss";
+
+$toggle-label-w: 55px;
+$toggle-label-h: 30px;
+$toggle-label-circle-size: 22px;
+$toggle-label-circle-left: 28px;
+
+.toggle {
+	display: flex;
+}
+
+.toggle-text {
+	margin-right: $gap-2x;
+}
+
+.toggle__label {
+	display: block;
+	position: relative;
+	
+	width: $toggle-label-w;
+	height: $toggle-label-h;
+	
+	background-color: transparent;
+	
+	border: 3px solid $dark-color;
+	border-radius: 8px;
+	
+	cursor: pointer;
+}
+
+.toggle__label-circle {
+	position: absolute;
+	display: flex;
+	
+	top: 4px;
+	left: 4px;
+	width: $toggle-label-circle-size;
+	height: $toggle-label-circle-size;
+	
+	background: $dark-color;
+	
+	border-radius: 50%;
+	
+	transition: all 0.4s ease;
+}
+
+.toggle__input:checked ~ .toggle__label .toggle__label-circle {
+	left: $toggle-label-circle-left;
+}

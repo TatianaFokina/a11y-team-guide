@@ -1,0 +1,19 @@
+ul {
+	list-style: none;
+}
+
+li {
+	&:before {
+		content: "⁃";
+		display: inline-block;
+		
+		margin-right: $gap-2x;
+	}
+}
+
+.card,
+.navigation-list__item {
+	&:before {
+		content: none;
+	}
+}
