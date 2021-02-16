@@ -1,0 +1,41 @@
+// Colors
+$white: #ffffff;
+
+$bg-color-main: #FFFDE7;
+$bg-color-devs: #ebf9ff;
+$bg-color-designers: #f1eef7;
+
+$text-color: #323232;
+
+// Font: font-size, line-height
+$font-size-root: 20px;
+$font-size-base: 1rem;
+// 46px
+$font-size-xxl: 2.3rem;
+// 40px
+$font-size-xl: 2rem;
+// 32px
+$font-size-lg: 1.6rem;
+// $font-size-md
+// $font-size-sm
+// $font-size-xs
+
+$line-height: 1.5;
+
+// Grid breakpoints and container max-widths
+$breakpoints: (
+		xs: 0,
+		sm: 576px,
+		md: 768px,
+		lg: 992px,
+		xl: 1200px,
+		xxl: 1400px
+);
+
+$container-widths: (
+		sm: 540px,
+		md: 720px,
+		lg: 960px,
+		xl: 1020px,
+		xxl: 1320px
+);
