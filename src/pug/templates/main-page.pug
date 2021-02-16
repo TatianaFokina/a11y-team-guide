@@ -6,10 +6,12 @@ html(lang="ru")
 	body
 		include ../partials/header.pug
 
-		include ../partials/color-scheme-buttons
+		.content
+			.container
+				include ../partials/color-scheme-control
 
-		main(id="main-content")
-			h1.heading-first-lvl= $h1
-			block content
+				main(id="main-content")
+					h1.heading-first-lvl= $h1
+					block content
 
 		include ../partials/footer.pug

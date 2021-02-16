@@ -29,7 +29,7 @@ block content
 				block
 
 		mixin extraGuide($href, $linkName, $linkInformation)
-			li.extra-guides__list-item
+			li(lang="en").extra-guides__list-item
 				if ($linkInformation)
 					a.extra-guides__list-item-link(href= $href target="_blank" rel="noopener noreferrer")= $linkName
 					span= ", " + $linkInformation
