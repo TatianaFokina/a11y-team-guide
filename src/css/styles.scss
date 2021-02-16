@@ -3,11 +3,16 @@
 // @import "_mixins.scss";
 
 // Core styles
+@import "basic/_global.scss";
 @import "basic/_fonts.scss";
 @import "basic/_layout.scss";
 @import "basic/_container";
 
-// Components: links, headings, color scheme switcher...
-@import "components/_headings.scss";
-@import "components/_links.scss";
+// Components
 @import "components/_header.scss";
+@import "components/_footer.scss";
+@import "components/_headings.scss";
+@import "components/_lists.scss";
+@import "components/_links.scss";
+@import "components/_color-scheme-control";
+@import "components/_cards";
