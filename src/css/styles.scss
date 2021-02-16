@@ -1,0 +1,13 @@
+// Variables and mixins
+@import "_variables.scss";
+// @import "_mixins.scss";
+
+// Core styles
+@import "basic/_fonts.scss";
+@import "basic/_layout.scss";
+@import "basic/_container";
+
+// Components: links, headings, color scheme switcher...
+@import "components/_headings.scss";
+@import "components/_links.scss";
+@import "components/_header.scss";
