@@ -1,41 +1,53 @@
 // Colors
-$white: #ffffff;
+$accent-color: #ed3c20;
+$dark-color: #272624;
+$bright-color: #ffffff;
 
-$bg-color-main: #FFFDE7;
-$bg-color-devs: #ebf9ff;
-$bg-color-designers: #f1eef7;
+$bg-color-main: #ebe0ce;
 
 $text-color: #323232;
+$nav-link-color: #861f0e;
+$link-color: #bb1d05;
+$nav-link-underline-color: lighten($nav-link-color, 16%);
+$link-underline-color: lighten($link-color, 40%);
 
 // Font: font-size, line-height
 $font-size-root: 20px;
 $font-size-base: 1rem;
-// 46px
-$font-size-xxl: 2.3rem;
-// 40px
-$font-size-xl: 2rem;
-// 32px
-$font-size-lg: 1.6rem;
-// $font-size-md
-// $font-size-sm
-// $font-size-xs
+$font-size-xxl: 2.3rem; // 46px
+$font-size-xl: 2rem; // 40px
+$font-size-lg: 1.6rem; // 32px
+$font-size-md: 1.2rem; // 24px
+$font-size-sm: 0.8rem; // 16px
+$font-size-xs: 0.7rem; //14px
 
 $line-height: 1.5;
 
+// Gaps
+$gap-1x: 8px;
+$gap-2x: $gap-1x * 2; // 16px
+$gap-3x: $gap-1x * 3; // 24px
+$gap-4x: $gap-1x * 4; // 32px
+$gap-5x: $gap-1x * 5; // 40px
+$gap-6x: $gap-1x * 6; // 48px
+$gap-7x: $gap-1x * 7; // 56px
+$gap-8x: $gap-1x * 8; // 64px
+$gap-9x: $gap-1x * 9; // 72px
+
 // Grid breakpoints and container max-widths
 $breakpoints: (
-		xs: 0,
-		sm: 576px,
-		md: 768px,
-		lg: 992px,
-		xl: 1200px,
-		xxl: 1400px
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
 );
 
 $container-widths: (
-		sm: 540px,
-		md: 720px,
-		lg: 960px,
-		xl: 1020px,
-		xxl: 1320px
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1020px,
+	xxl: 1320px
 );
