@@ -1,0 +1,18 @@
+// Skip link
+.skip-link {
+	position: absolute;
+	top: auto;
+	left: -999px;
+	
+	width: 1px;
+	height: 1px;
+	
+	&:focus {
+		position: static;
+		display: inline-block;
+		
+		width: auto;
+		height: auto;
+		margin: auto;
+	}
+}
