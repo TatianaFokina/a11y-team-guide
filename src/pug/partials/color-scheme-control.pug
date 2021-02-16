@@ -1,7 +1,8 @@
 // TODO Add svg icons with aria-hidden="true"
 
 .toggle
-    input.toggle__input(type="checkbox" id="colorToggle")
+    .toggle-text(aria-hidden="true") Тёмная тема
+    input.toggle__input.visually-hidden(type="checkbox" id="colorToggle")
     label(for="colorToggle").toggle__label
         span.toggle__label-name.visually-hidden Тёмная тема
-        span.toggle__label-img
+        span.toggle__label-circle
