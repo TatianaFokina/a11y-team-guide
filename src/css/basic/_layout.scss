@@ -1,5 +1,10 @@
 @import "../_variables.scss";
 
+* {
+	box-sizing: border-box;
+	color: inherit;
+}
+
 html {
 	font-size: $font-size-root;
 	
