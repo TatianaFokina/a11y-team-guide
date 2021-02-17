@@ -10,13 +10,19 @@ $toggle-label-circle-left: 25px;
 	display: flex;
 }
 
-.toggle-text {
-	margin-right: $gap-2x;
-}
-
 .toggle__label {
 	display: block;
 	position: relative;
+	
+	cursor: pointer;
+}
+
+.toggle__label-name {
+	padding-right: $gap-2x;
+}
+
+.toggle__label-control {
+	position: absolute;
 	
 	width: $toggle-label-w;
 	height: $toggle-label-h;
@@ -24,16 +30,14 @@ $toggle-label-circle-left: 25px;
 	background-color: transparent;
 	
 	border: 3px solid $dark-color;
-	border-radius: 8px;
-	
-	cursor: pointer;
+	border-radius: 33px;
 	
 	&:hover {
 		background-color: $bg-toggle-hover-color;
 	}
 }
 
-.toggle__label-circle {
+.toggle__label-control-circle {
 	position: absolute;
 	display: flex;
 	
@@ -49,6 +53,6 @@ $toggle-label-circle-left: 25px;
 	transition: all 0.4s ease;
 }
 
-.toggle__input:checked ~ .toggle__label .toggle__label-circle {
+.toggle__input:checked ~ .toggle__label .toggle__label-control-circle {
 	left: $toggle-label-circle-left;
 }
