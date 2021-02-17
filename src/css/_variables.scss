@@ -1,6 +1,7 @@
 // Colors
 $accent-color: #ed3c20;
 $dark-color: #272624;
+$light-color: #575751;
 $bright-color: #ffffff;
 
 $bg-color-main: #ebe0ce;
@@ -20,6 +21,9 @@ $nav-link-underline-color: lighten($nav-link-color, 16%);
 
 $bg-toggle-hover-color: darken($bg-color-main, 10%);
 $bg-card-hover-color: darken($bg-color-main, 3%);
+
+// Code styles
+$bg-code-color: transparentize($accent-color, 0.8);
 
 // Font: font-size, line-height
 $font-size-root: 20px;
