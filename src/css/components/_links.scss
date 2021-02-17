@@ -20,19 +20,26 @@ a {
 // Skip link
 .skip-link {
 	position: absolute;
+	display: inline-block;
 	top: auto;
 	left: -999px;
 	
 	width: 1px;
 	height: 1px;
 	
+	font-size: $font-size-sm;
+	font-weight: bold;
+	color: $text-color;
+	
 	&:focus {
-		position: static;
-		display: inline-block;
+		top: 0;
+		left: 50%;
 		
 		width: auto;
 		height: auto;
-		margin: auto;
+		margin: 0 auto;
+		
+		transform: translateX(-50%);
 	}
 }
 
