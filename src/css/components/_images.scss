@@ -1,0 +1,15 @@
+@import "../_variables.scss";
+
+.figure {
+	display: inline-block;
+}
+
+.figure__img {
+	@extend .fluid-img;
+}
+
+.figure__caption {
+	width: 0;
+	min-width: 100%;
+	padding-top: $gap-1x;
+}

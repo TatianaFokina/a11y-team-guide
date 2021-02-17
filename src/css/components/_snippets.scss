@@ -1,0 +1,19 @@
+@import "../_variables.scss";
+
+code {
+	word-wrap: break-word;
+	-webkit-box-decoration-break: clone;
+	
+	background: $bg-code-color;
+}
+
+kbd {
+	border: 1px solid $dark-color;
+}
+
+code,
+kbd {
+	padding: 1px 2px 1px;
+	
+	border-radius: 2px;
+}
