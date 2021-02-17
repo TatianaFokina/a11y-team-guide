@@ -7,9 +7,26 @@ a {
 	
 	border-bottom: 2px solid;
 	border-bottom-color: $link-underline-color;
+	
+	&:hover {
+		color: $link-hover-color;
+		border-bottom-color: $link-hover-underline-color;
+	}
+	
+	&:active {
+		color: $link-active-color;
+		border-bottom-color: $link-active-underline-color;
+	}
 }
 
 // Navigation links
+.logo-link .logo-link-book {
+	&:hover {
+		fill: red;
+	}
+	
+}
+
 .navigation-list__item-link {
 	text-decoration: none;
 	color: $nav-link-color;

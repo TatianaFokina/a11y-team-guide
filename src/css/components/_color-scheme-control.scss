@@ -1,9 +1,10 @@
 @import "../_variables.scss";
 
 $toggle-label-w: 55px;
-$toggle-label-h: 30px;
+$toggle-label-h: 33px;
 $toggle-label-circle-size: 22px;
-$toggle-label-circle-left: 28px;
+$toggle-label-circle-position: 2px;
+$toggle-label-circle-left: 25px;
 
 .toggle {
 	display: flex;
@@ -26,14 +27,18 @@ $toggle-label-circle-left: 28px;
 	border-radius: 8px;
 	
 	cursor: pointer;
+	
+	&:hover {
+		background-color: $bg-toggle-hover-color;
+	}
 }
 
 .toggle__label-circle {
 	position: absolute;
 	display: flex;
 	
-	top: 4px;
-	left: 4px;
+	top: $toggle-label-circle-position;
+	left: $toggle-label-circle-position;
 	width: $toggle-label-circle-size;
 	height: $toggle-label-circle-size;
 	

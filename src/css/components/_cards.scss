@@ -1,6 +1,6 @@
 @import "../_variables.scss";
 
-$card-width: 236px;
+$card-width: 295px;
 
 .cards-list {
 	display: flex;
@@ -28,6 +28,11 @@ $card-width: 236px;
 	
 	&:not(:last-of-type) {
 		margin-right: $gap-3x;
+	}
+	
+	&:hover {
+		background-color: $bg-card-hover-color;
+		box-shadow: $accent-color 0 0 0 2px;
 	}
 }
 

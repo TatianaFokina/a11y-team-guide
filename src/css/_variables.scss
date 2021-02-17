@@ -6,10 +6,20 @@ $bright-color: #ffffff;
 $bg-color-main: #ebe0ce;
 
 $text-color: #323232;
-$nav-link-color: #861f0e;
+
 $link-color: #bb1d05;
-$nav-link-underline-color: lighten($nav-link-color, 16%);
 $link-underline-color: lighten($link-color, 40%);
+// Interactive styles
+$link-hover-color: lighten($link-color, 20%);
+$link-hover-underline-color: lighten($link-underline-color, 7%);
+$link-active-color: darken($link-color, 10%);
+$link-active-underline-color: darken($link-underline-color, 7%);
+
+$nav-link-color: #861f0e;
+$nav-link-underline-color: lighten($nav-link-color, 16%);
+
+$bg-toggle-hover-color: darken($bg-color-main, 10%);
+$bg-card-hover-color: darken($bg-color-main, 3%);
 
 // Font: font-size, line-height
 $font-size-root: 20px;
