@@ -1,18 +1,21 @@
 // Variables and mixins
-@import "_variables.scss";
+@import "_variables";
 // @import "_mixins.scss";
 
 // Core styles
-@import "basic/_global.scss";
-@import "basic/_fonts.scss";
-@import "basic/_layout.scss";
+@import "basic/_global";
+@import "basic/_fonts";
+@import "basic/_layout";
 @import "basic/_container";
 
 // Components
-@import "components/_header.scss";
-@import "components/_footer.scss";
-@import "components/_headings.scss";
-@import "components/_lists.scss";
-@import "components/_links.scss";
+@import "components/_header";
+@import "components/_footer";
+@import "components/_headings";
+@import "components/_lists";
+@import "components/_links";
 @import "components/_color-scheme-control";
 @import "components/_cards";
+@import "components/_images";
+@import "components/_snippets";
+
