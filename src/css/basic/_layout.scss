@@ -24,11 +24,6 @@ body {
 	color: $text-color;
 }
 
-body,
-small {
-	font-family: "IBM Plex Sans", sans-serif;
-}
-
 .content {
 	//- Sticky footer
 	flex: 1 0 auto;
@@ -36,14 +31,31 @@ small {
 	margin-top: $gap-6x;
 }
 
-.extra-guides {
-	margin-top: $gap-9x;
-}
-
 small {
 	font-size: $font-size-sm;
 }
 
-code {
+body,
+small {
+	font-family: "IBM Plex Sans", sans-serif;
+}
+
+code,
+kbd {
 	font-family: "IBM Plex Mono", monospace;
+	font-size: $font-size-sm;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+	font-size: $font-size-xs;
+	color: $light-color;
+}
+
+.extra-guides {
+	margin-top: $gap-9x;
 }
