@@ -20,13 +20,6 @@ a {
 }
 
 // Navigation links
-.logo-link .logo-link-book {
-	&:hover {
-		fill: red;
-	}
-	
-}
-
 .navigation-list__item-link {
 	text-decoration: none;
 	color: $nav-link-color;
@@ -77,4 +70,9 @@ a {
 .skip-link,
 .card__link {
 	border-bottom: 0;
+}
+
+.logo-link:hover .logo-link-book,
+.github-link:hover .github {
+	fill: $accent-color;
 }
