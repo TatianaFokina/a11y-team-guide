@@ -2,15 +2,14 @@
 
 $heading-separator-h: 4px;
 $first-heading-w: 58px;
-$second-heading-w: 34px;
 
-.heading-first-lvl,
-.heading-second-lvl {
+.heading-first-lvl {
 	&:before {
 		content: "";
 		display: inline-block;
 		vertical-align: middle;
 		
+		width: $first-heading-w;
 		height: $heading-separator-h;
 		margin-right: $gap-1x;
 		
@@ -23,10 +22,6 @@ $second-heading-w: 34px;
 	margin-bottom: $gap-3x;
 	
 	font-size: $font-size-xxl;
-	
-	&:before {
-		width: $first-heading-w;
-	}
 }
 
 .heading-second-lvl {
@@ -34,10 +29,6 @@ $second-heading-w: 34px;
 	margin-bottom: $gap-2x;
 	
 	font-size: $font-size-xl;
-	
-	&:before {
-		width: $first-heading-w;
-	}
 }
 
 .heading-third-lvl {

@@ -1,13 +1,18 @@
+@import "../_variables.scss";
+
 ul {
 	list-style: none;
 }
 
 li {
+	position: relative;
+	
 	&:before {
 		content: "⁃";
+		position: absolute;
 		display: inline-block;
 		
-		margin-right: $gap-2x;
+		left: -$gap-2x;
 	}
 }
 
