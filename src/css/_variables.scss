@@ -7,6 +7,7 @@ $bright-color: #ffffff;
 $bg-color-main: #ebe0ce;
 
 $text-color: #323232;
+$text-selection-color: transparentize($accent-color, 0.7);
 
 $link-color: #bb1d05;
 $link-underline-color: lighten($link-color, 40%);

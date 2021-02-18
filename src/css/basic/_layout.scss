@@ -5,6 +5,10 @@
 	color: inherit;
 }
 
+::selection {
+	background: $text-selection-color;
+}
+
 html {
 	font-size: $font-size-root;
 	
