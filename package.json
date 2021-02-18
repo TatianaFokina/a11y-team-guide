@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "rimraf test && parcel src/pug/content/**/*.pug --no-source-maps --no-cache --log-level 4 --out-dir test",
-    "build": "rimraf public && parcel build src/pug/content/**/*.pug --no-source-maps --no-cache --no-minify --out-dir public"
+    "build": "rimraf public && parcel build src/pug/content/**/*.pug --no-source-maps --no-cache --no-content-hash --no-minify --out-dir public"
   },
   "author": "Tatiana Fokina",
   "license": "ISC",
@@ -19,10 +19,11 @@
     "config": {
       ".css": "css",
       ".js": "js",
-      "images": [
+      "assets": [
         ".jpg",
         ".svg",
-        ".png"
+        ".png",
+        ".ico"
       ],
       "fonts": [
         ".woff",
