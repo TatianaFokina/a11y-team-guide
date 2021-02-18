@@ -145,7 +145,7 @@ block content
 		code.
 			&lt;iframe src="https://api-maps.yandex.ru/services/inception/..." width="0" height="0" scrolling="no" frameborder="0" ... title="Яндекс.Карты">
 	h2.heading-second-lvl Не отменяйте <code class="code-heading">outline</code> для интерактивных элементов при фокусе
-	p Это важно для пользователей, которые пользуются клавиатурой для навигации по сайту. Просите дизайнеров проработать стили, можно заменить <code class="code-heading">outline</code> на <code class="code-heading">box-shadow</code>.
+	p Это важно для пользователей, которые пользуются клавиатурой для навигации по сайту. Просите дизайнеров проработать стили, можно заменить <code>outline</code> на <code>box-shadow</code>.
 	p Плохой пример&nbsp;—&nbsp;<a href="https://market.yandex.ru/" target="_blank" rel="noopener noreferrer">Яндекс.Маркет</a>. Попробуйте пройти по странице с помощью клавиш.
 	p Хороший пример&nbsp;—&nbsp;<a href="https://www.xbox.com/ru-RU/" target="_blank" rel="noopener noreferrer">сайт <span lang="en">Xbox</span></a>.
 	h2.heading-second-lvl Увеличивайте область клика с помощью <code class="code-heading">padding</code>
@@ -155,7 +155,7 @@ block content
 	ul
 		li Лучше никакой <span lang="en">ARIA</span>, чем плохая <span lang="en">ARIA</span>.
 		li Если используете <span lang="en">ARIA</span>, то не дублируйте уже встроенные в элементы роли.
-	h3.heading-third-lvl <code class="code-heading">role="none"/role="presentation"</code>
+	h3.heading-third-lvl <code class="code-heading">role="none"</code> и <code class="code-heading">role="presentation"</code>
 	p Обе роли выполняют одинаковую функцию&nbsp;—&nbsp;отменяют семантику элемента.
 	p <span lang="en">ARIA 1.1</span>: «До тех пор, пока не будет хорошо поддерживаться <code>role="none"</code>, рекомендуется использовать только <code>role="presentation"</code> или избыточный вариант с фоллбеком <code>role="none presentation"</code>».
 	p Можно использовать при табличной вёрстке. Чтобы смягчить негативные последствия такого выбора, у таблиц можно удалить семантическое свойство при помощи <code>role="presentation"</code> для элемента <code>table</code>. Это сделает такой контент более понятным для пользователей скринридеров.
