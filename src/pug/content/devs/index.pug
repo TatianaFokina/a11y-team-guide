@@ -92,22 +92,22 @@ block content
 	p Не пропускайте уровни заголовков. Начинайте всегда с <code>&lt;h1</code>, а за ним размещайте заголовки более низких уровней.
 	pre
 		code.
-			&lt;h1></h1>
-			&lt;h2></h2>
-			&lt;h3></h3>
-			&lt;h4></h4>
-			&lt;h5></h5>
-			&lt;h6></h6>
+			&lt;h1>&lt;/h1>
+			&lt;h2>&lt;/h2>
+			&lt;h3>&lt;/h3>
+			&lt;h4>&lt;/h4>
+			&lt;h5>&lt;/h5>
+			&lt;h6>&lt;/h6>
 	p Если у заголовка есть подзаголовки, то тоже соблюдайте правильную иерархию.
 	pre
 		code.
-			&lt;h1></h1>
-			&lt;h2></h2>
-				&lt;h3></h3>
-				&lt;h4></h4>
-			&lt;h3></h3>
-				&lt;h4></h4>
-				&lt;h5></h5>
+			&lt;h1>&lt;/h1>
+			&lt;h2>&lt;/h2>
+				&lt;h3>&lt;/h3>
+				&lt;h4>&lt;/h4>
+			&lt;h3>&lt;/h3>
+				&lt;h4>&lt;/h4>
+				&lt;h5>&lt;/h5>
 	h2.heading-second-lvl Добавляйте ссылку с переходом к основному контенту&nbsp;—&nbsp;skip link
 	p Это полезно, когда в меню много пунктов. Такая ссылка поможет пользователям вспомогательных технологий сразу же переходить к основному контенту без утомительного перемещения от первого пункта меню к последнему.
 	p Можно проверить как она работает на <a href="https://www.nytimes.com" target="_blank" rel="noopener noreferrer">сайте <span lang="en">The New York Times</span></a> при навигации с клавиатуры.
@@ -116,19 +116,19 @@ block content
 	p Связывайте <code>&lt;label></code> с <code>&lt;input></code> при помощи атрибута <code>for=""</code>.
 	pre
 		code.
-			&lt;label for="input">Лейбл</label>
+			&lt;label for="input">Лейбл&lt;/label>
 			&lt;input type="text" class="form-control" id="input">
 	p Если в дизайне лейблы к полям не предусмотрены, делайте их скрытыми для обычных пользователей при помощи вспомогательного класса <code>.visually-hidden</code>.
 	p Ещё один способ описать поле&nbsp;—&nbsp;задать ему атрибут <code>aria-label=""</code>. Значение атрибута будет доступно только вспомогательным технологиям. Но этот способ подходит для случаев, когда это не полноценная форма, а одиночное поле с кнопкой, например, поиск.
 	pre
 		code.
 			&lt;input type="text" name="search" aria-label="Search">
-			&lt;button type="submit">Поиск</button>
+			&lt;button type="submit">Поиск&lt;/button>
 	p На способ выше похож способ с <code>aria-labelledby=""</code>. Значение атрибута также будет доступно только для пользователей вспомогательных технологий. Его стоит применять, когда это одиночное поле с кнопкой.
 	pre
 		code.
 			&lt;input type="text" name="search" aria-labelledby="search-button">
-			&lt;button id="search-button" type="submit">Поиск</button>
+			&lt;button id="search-button" type="submit">Поиск&lt;/button>
 	p Метод с атрибутом <code>title=""</code> работает только в случае пользователей, которые не пользуются вспомогательными технологиями. Значение атрибута не доступно для таких технологий, поэтому его не рекомендуется использовать.
 	p Подробнее о лейблах к полям можно узнать из <a href="https://www.w3.org/WAI/tutorials/forms/labels/" target="_blank" rel="noopener noreferrer">тьюториала <span lang="en">W3C</span></a>.
 	h2.heading-second-lvl Используйте <code class="code-heading">title</code> только тогда, когда это действительно нужно
