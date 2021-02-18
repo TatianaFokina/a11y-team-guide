@@ -16,9 +16,11 @@ li {
 	}
 }
 
+// Hack for assistive technology + Safari. It's save list context
 .card,
 .navigation-list__item {
 	&:before {
-		content: none;
+		content: "\200B";
+		position: absolute;
 	}
 }
