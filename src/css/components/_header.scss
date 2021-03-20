@@ -53,6 +53,8 @@ $list-separator-left: 20px;
 	
 	&:hover .logo-icon {
 		fill: $secondary-color;
+		
+		transition: all 0.2s ease-in-out;
 	}
 }
 

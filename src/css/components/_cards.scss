@@ -32,6 +32,8 @@ $card-width: 295px;
 	&:hover {
 		background-color: var(--card-hover);
 		box-shadow: $card-border-color 0 0 0 2px;
+		
+		transition: all 0.2s ease-in-out;
 	}
 }
 
