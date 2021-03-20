@@ -3,7 +3,7 @@
 // Global link styles
 a {
 	text-decoration: none;
-	color: $link-color;
+	color: var(--link-color);
 	
 	border-bottom: 2px solid;
 	border-bottom-color: $link-underline-color;
@@ -17,14 +17,6 @@ a {
 		color: $link-active-color;
 		border-bottom-color: $link-active-underline-color;
 	}
-}
-
-// Navigation links
-.navigation-list__item-link {
-	text-decoration: none;
-	color: $nav-link-color;
-	
-	border-bottom-color: $nav-link-underline-color;
 }
 
 // Skip link
@@ -53,26 +45,15 @@ a {
 	}
 }
 
-// Card links
-.card__link {
-	color: inherit;
-	font-size: $font-size-md;
-}
+
 
 // Common styles
-.logo-link,
-.github-link {
+.logo-link {
 	display: inline-flex;
 }
 
 .logo-link,
-.github-link,
 .skip-link,
 .card__link {
 	border-bottom: 0;
-}
-
-.logo-link:hover .logo-link-book,
-.github-link:hover .github {
-	fill: $accent-color;
 }

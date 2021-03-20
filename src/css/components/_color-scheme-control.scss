@@ -29,11 +29,13 @@ $toggle-label-circle-left: 25px;
 	
 	background-color: transparent;
 	
-	border: 3px solid $dark-color;
+	border-width: 3px;
+	border-style: solid;
 	border-radius: 33px;
+	border-color: var(--toggle-border);
 	
 	&:hover {
-		background-color: $bg-toggle-hover-color;
+		background-color: var(--toggle-hover);
 	}
 }
 
@@ -46,7 +48,7 @@ $toggle-label-circle-left: 25px;
 	width: $toggle-label-circle-size;
 	height: $toggle-label-circle-size;
 	
-	background: $dark-color;
+	background: var(--toggle-circle);
 	
 	border-radius: 50%;
 	

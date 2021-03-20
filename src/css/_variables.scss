@@ -1,32 +1,97 @@
 // Colors
-$accent-color: #ed3c20;
-$dark-color: #272624;
-$light-color: #575751;
-$bright-color: #ffffff;
+$primary-color: #ebe0ce;
+$secondary-color: #ed3c20;
 
-$bg-color-main: #ebe0ce;
+$gray-100: #e8e8e8;
+$gray-200: #b1b1b1;
+$gray-300: #616161;
+$gray-400: #323232;
+$gray-500: #272624;
+$blue-gray: #20282c;
+$white: #ffffff;
 
-$text-color: #323232;
-$text-selection-color: transparentize($accent-color, 0.7);
+$bg-color: $primary-color;
+$bg-color--dark: $blue-gray;
 
-$link-color: #bb1d05;
-$link-underline-color: lighten($link-color, 40%);
+// Text
+$text-color: $gray-400;
+$text-color--dark: $gray-100;
+$selection-color: transparentize($secondary-color, 0.7);
+
+$figcaption-color: $gray-300;
+$figcaption-color--dark: $gray-200;
+
+$h3-color: $gray-300;
+$h3-color--dark: $gray-200;
+
+// Links
+$link-color: #01579B;
+$link-underline-color: transparentize($link-color, .2);
 // Interactive styles
-$link-hover-color: lighten($link-color, 20%);
-$link-hover-underline-color: lighten($link-underline-color, 7%);
+$link-hover-color: lighten($link-color, 10%);
+$link-hover-underline-color: transparentize($link-underline-color, .4);
 $link-active-color: darken($link-color, 10%);
 $link-active-underline-color: darken($link-underline-color, 7%);
 
-$nav-link-color: #861f0e;
-$nav-link-underline-color: lighten($nav-link-color, 16%);
+// Color scheme toggle
+$toggle-color: $gray-500;
+$toggle-color--dark: $gray-100;
+$toggle-hover-color: darken($bg-color, 10%);
+$toggle-hover-color--dark: lighten($bg-color--dark, 20%);
 
-$bg-toggle-hover-color: darken($bg-color-main, 10%);
-$bg-card-hover-color: darken($bg-color-main, 3%);
+// Cards
+$card-border-color: $secondary-color;
+$card-hover-color: darken($bg-color, 3%);
+$card-hover-color--dark: lighten($bg-color--dark, 3%);
 
-// Code styles
-$bg-code-color: transparentize($accent-color, 0.8);
+// Icons
+$icon-color: $gray-500;
+$icon-color--dark: $gray-200;
+
+// Code
+$bg-code-color: transparentize($secondary-color, 0.8);
+
+
+
+
+// Color scheme
+// Light theme
+body {
+	--bg-color: #{$bg-color};
+	--text-color: #{$text-color};
+	--link-color: #{$link-color};
+	--h3-color: #{$h3-color};
+	--figcaption-color: #{$figcaption-color};
+	--icon-color: #{$icon-color};
+	--toggle-border: #{$toggle-color};
+	--toggle-circle: #{$toggle-color};
+	--toggle-hover: #{$toggle-hover-color};
+	--card-hover: #{$card-hover-color};
+	
+	color: var(--text-color);
+	background-color: var(--bg-color);
+}
+
+// Dark theme
+body.dark-scheme {
+	--bg-color: #{$bg-color--dark};
+	--text-color: #{$text-color--dark};
+	--h3-color: #{$h3-color--dark};
+	--figcaption-color: #{$figcaption-color--dark};
+	--icon-color: #{$icon-color--dark};
+	--toggle-border: #{$toggle-color--dark};
+	--toggle-circle: #{$toggle-color--dark};
+	--toggle-hover: #{$toggle-hover-color--dark};
+	--card-hover: #{$card-hover-color--dark};
+}
+
+
+
 
 // Font: font-size, line-height
+$text-font-family: "IBM Plex Sans", sans-serif;
+$code-font-family: "IBM Plex Mono", monospace;
+
 $font-size-root: 20px;
 $font-size-base: 1rem;
 $font-size-xxl: 2.2rem; // 46px
@@ -38,6 +103,9 @@ $font-size-xs: 0.7rem; //14px
 
 $line-height: 1.5;
 
+
+
+
 // Gaps
 $gap-1x: 8px;
 $gap-2x: $gap-1x * 2; // 16px
@@ -48,6 +116,9 @@ $gap-6x: $gap-1x * 6; // 48px
 $gap-7x: $gap-1x * 7; // 56px
 $gap-8x: $gap-1x * 8; // 64px
 $gap-9x: $gap-1x * 9; // 72px
+
+
+
 
 // Grid breakpoints and container max-widths
 $breakpoints: (

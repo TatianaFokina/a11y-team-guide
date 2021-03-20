@@ -39,6 +39,15 @@ $list-separator-left: 20px;
 		
 		margin-left: $list-separator-left;
 		
-		color: $accent-color;
+		color: $secondary-color;
 	}
+}
+
+// Logo (SVG)
+.logo-icon {
+	fill: var(--icon-color);
+}
+
+.logo-link:hover .logo-icon {
+	fill: $secondary-color;
 }

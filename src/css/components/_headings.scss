@@ -13,7 +13,7 @@ $first-heading-w: 58px;
 		height: $heading-separator-h;
 		margin-right: $gap-1x;
 		
-		background: $accent-color;
+		background: $secondary-color;
 	}
 }
 
@@ -36,5 +36,5 @@ $first-heading-w: 58px;
 	margin-bottom: $gap-2x;
 	
 	font-size: $font-size-lg;
-	color: $light-color;
+	color: var(--h3-color);
 }

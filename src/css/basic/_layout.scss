@@ -6,13 +6,11 @@
 }
 
 ::selection {
-	background: $text-selection-color;
+	background: $selection-color;
 }
 
 html {
 	font-size: $font-size-root;
-	
-	background-color: $bg-color-main;
 }
 
 body {
@@ -25,7 +23,6 @@ body {
 	
 	font-size: $font-size-base;
 	line-height: $line-height;
-	color: $text-color;
 }
 
 .content {
@@ -41,12 +38,12 @@ small {
 
 body,
 small {
-	font-family: "IBM Plex Sans", sans-serif;
+	font-family: $text-font-family;
 }
 
 code,
 kbd {
-	font-family: "IBM Plex Mono", monospace;
+	font-family: $code-font-family;
 	font-size: $font-size-sm;
 }
 
@@ -57,7 +54,6 @@ figure {
 
 figcaption {
 	font-size: $font-size-xs;
-	color: $light-color;
 }
 
 .extra-guides {
