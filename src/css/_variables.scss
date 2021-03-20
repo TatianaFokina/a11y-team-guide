@@ -54,48 +54,6 @@ $img-filter--dark: brightness(.8) contrast(1.2);
 // Code
 $bg-code-color: transparentize($secondary-color, 0.8);
 
-
-
-
-// Color scheme
-// Light theme
-body {
-	--bg-color: #{$bg-color};
-	--text-color: #{$text-color};
-	--link-color: #{$link-color};
-	--link-hover: #{$link-hover-color};
-	--h3-color: #{$h3-color};
-	--img-filter: #{$img-filter};
-	--figcaption-color: #{$figcaption-color};
-	--icon-color: #{$icon-color};
-	--toggle-border: #{$toggle-color};
-	--toggle-circle: #{$toggle-color};
-	--toggle-hover: #{$toggle-hover-color};
-	--card-hover: #{$card-hover-color};
-	
-	color: var(--text-color);
-	background-color: var(--bg-color);
-}
-
-// Dark theme
-body.dark-scheme {
-	--bg-color: #{$bg-color--dark};
-	--text-color: #{$text-color--dark};
-	--link-color: #{$link-color--dark};
-	--link-hover: #{$link-hover-color--dark};
-	--h3-color: #{$h3-color--dark};
-	--img-filter: #{$img-filter--dark};
-	--figcaption-color: #{$figcaption-color--dark};
-	--icon-color: #{$icon-color--dark};
-	--toggle-border: #{$toggle-color--dark};
-	--toggle-circle: #{$toggle-color--dark};
-	--toggle-hover: #{$toggle-hover-color--dark};
-	--card-hover: #{$card-hover-color--dark};
-}
-
-
-
-
 // Font: font-size, line-height
 $text-font-family: "IBM Plex Sans", sans-serif;
 $code-font-family: "IBM Plex Mono", monospace;
