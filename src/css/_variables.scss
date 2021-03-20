@@ -47,6 +47,10 @@ $card-hover-color--dark: lighten($bg-color--dark, 3%);
 $icon-color: $gray-500;
 $icon-color--dark: $gray-200;
 
+// Images
+$img-filter: unset;
+$img-filter--dark: brightness(.8) contrast(1.2);
+
 // Code
 $bg-code-color: transparentize($secondary-color, 0.8);
 
@@ -61,6 +65,7 @@ body {
 	--link-color: #{$link-color};
 	--link-hover: #{$link-hover-color};
 	--h3-color: #{$h3-color};
+	--img-filter: #{$img-filter};
 	--figcaption-color: #{$figcaption-color};
 	--icon-color: #{$icon-color};
 	--toggle-border: #{$toggle-color};
@@ -79,6 +84,7 @@ body.dark-scheme {
 	--link-color: #{$link-color--dark};
 	--link-hover: #{$link-hover-color--dark};
 	--h3-color: #{$h3-color--dark};
+	--img-filter: #{$img-filter--dark};
 	--figcaption-color: #{$figcaption-color--dark};
 	--icon-color: #{$icon-color--dark};
 	--toggle-border: #{$toggle-color--dark};

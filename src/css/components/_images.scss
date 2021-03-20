@@ -1,5 +1,9 @@
 @import "../_variables.scss";
 
+img {
+	filter: var(--img-filter);
+}
+
 .figure {
 	display: inline-block;
 }
