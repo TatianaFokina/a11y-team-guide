@@ -30,5 +30,8 @@
         ".woff2"
       ]
     }
+  },
+  "dependencies": {
+    "color-scheme": "^1.0.1"
   }
 }
