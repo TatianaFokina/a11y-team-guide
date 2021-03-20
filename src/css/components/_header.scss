@@ -44,10 +44,18 @@ $list-separator-left: 20px;
 }
 
 // Logo (SVG)
-.logo-icon {
-	fill: var(--icon-color);
+.logo-link {
+	display: inline-flex;
+	
+	&:hover {
+		background-color: transparent;
+	}
+	
+	&:hover .logo-icon {
+		fill: $secondary-color;
+	}
 }
 
-.logo-link:hover .logo-icon {
-	fill: $secondary-color;
+.logo-icon {
+	fill: var(--icon-color);
 }

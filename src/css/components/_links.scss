@@ -9,13 +9,7 @@ a {
 	border-bottom-color: $link-underline-color;
 	
 	&:hover {
-		color: $link-hover-color;
-		border-bottom-color: $link-hover-underline-color;
-	}
-	
-	&:active {
-		color: $link-active-color;
-		border-bottom-color: $link-active-underline-color;
+		background-color: var(--link-hover);
 	}
 }
 
@@ -48,10 +42,6 @@ a {
 
 
 // Common styles
-.logo-link {
-	display: inline-flex;
-}
-
 .logo-link,
 .skip-link,
 .card__link {
