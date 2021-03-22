@@ -10,9 +10,8 @@ body {
 	--img-filter: #{$img-filter};
 	--figcaption-color: #{$figcaption-color};
 	--icon-color: #{$icon-color};
-	--toggle-border: #{$toggle-color};
-	--toggle-circle: #{$toggle-color};
-	--toggle-hover: #{$toggle-hover-color};
+	--switcher-border: #{$switcher-color};
+	--switcher-hover: #{$switcher-hover-color};
 	--card-hover: #{$card-hover-color};
 	
 	color: var(--text-color);
@@ -29,8 +28,7 @@ body.dark-scheme {
 	--img-filter: #{$img-filter--dark};
 	--figcaption-color: #{$figcaption-color--dark};
 	--icon-color: #{$icon-color--dark};
-	--toggle-border: #{$toggle-color--dark};
-	--toggle-circle: #{$toggle-color--dark};
-	--toggle-hover: #{$toggle-hover-color--dark};
+	--switcher-border: #{$switcher-color--dark};
+	--switcher-hover: #{$switcher-hover-color--dark};
 	--card-hover: #{$card-hover-color--dark};
 }

@@ -1,60 +1,33 @@
 @import "../_variables.scss";
 
-$toggle-label-w: 55px;
-$toggle-label-h: 32px;
-$toggle-label-circle-size: 22px;
-$toggle-label-circle-position: 2px;
-$toggle-label-circle-left: 25px;
-
-.toggle {
-	display: flex;
-}
-
-.toggle__label {
-	display: block;
-	position: relative;
+.switch-btn {
+	display: inline-flex;
+	align-items: center;
 	
-	cursor: pointer;
-}
-
-.toggle__label-name {
-	padding-right: $gap-2x;
-}
-
-.toggle__label-control {
-	position: absolute;
+	padding: $gap-1x $gap-2x;
 	
-	width: $toggle-label-w;
-	height: $toggle-label-h;
+	font-size: $font-size-base;
+	font-family: inherit;
 	
-	background-color: transparent;
-	
-	border-width: 3px;
-	border-style: solid;
+	border: 3px solid var(--switcher-border);
 	border-radius: 33px;
-	border-color: var(--toggle-border);
+	
+	background: transparent;
 	
 	&:hover {
-		background-color: var(--toggle-hover);
+		background-color: var(--switcher-hover);
+	}
+	
+	&:focus {
+		outline: 2px dotted $focus-color;
+		outline-offset: 2px;
 	}
 }
 
-.toggle__label-control-circle {
-	position: absolute;
-	display: flex;
-	
-	top: $toggle-label-circle-position;
-	left: $toggle-label-circle-position;
-	width: $toggle-label-circle-size;
-	height: $toggle-label-circle-size;
-	
-	background: var(--toggle-circle);
-	
-	border-radius: 50%;
-	
-	transition: all 0.4s ease;
+.switch-btn__img {
+	margin-left: $gap-1x;
 }
 
-.toggle__input:checked ~ .toggle__label .toggle__label-control-circle {
-	left: $toggle-label-circle-left;
+.switch-btn--hidden {
+	display: none;
 }
