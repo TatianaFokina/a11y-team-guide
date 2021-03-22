@@ -10,10 +10,24 @@
   "author": "Tatiana Fokina",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.8.6",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-custom-dist-structure": "^1.1.17",
+    "postcss": "^8.2.8",
     "pug": "^3.0.2",
     "sass": "^1.32.8"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "overrideBrowserslist": [
+          "last 5 versions",
+          "not dead",
+          "> 5%",
+          "not ie <= 11"
+        ]
+      }
+    }
   },
   "customDistStructure": {
     "config": {
