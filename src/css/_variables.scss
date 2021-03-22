@@ -32,11 +32,13 @@ $link-underline-color: transparentize($link-color, .3);
 $link-hover-color:transparentize($link-color, .8);
 $link-hover-color--dark:transparentize($link-color, .4);
 
-// Color scheme toggle
-$toggle-color: $gray-500;
-$toggle-color--dark: $gray-100;
-$toggle-hover-color: darken($bg-color, 10%);
-$toggle-hover-color--dark: lighten($bg-color--dark, 20%);
+$focus-color: $secondary-color;
+
+// Color scheme switchers
+$switcher-color: $gray-500;
+$switcher-color--dark: $gray-100;
+$switcher-hover-color: darken($bg-color, 7%);
+$switcher-hover-color--dark: lighten($bg-color--dark, 10%);
 
 // Cards
 $card-border-color: $secondary-color;
