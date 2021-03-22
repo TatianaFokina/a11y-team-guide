@@ -1,5 +1,7 @@
 @import "../_variables.scss";
 
+$extra-guides-item-gap: 5px;
+
 ul {
 	list-style: none;
 }
@@ -14,6 +16,10 @@ li {
 		
 		left: -$gap-2x;
 	}
+}
+
+.extra-guides__list-item {
+	padding-bottom: $extra-guides-item-gap;
 }
 
 // Hack for assistive technology + Safari. It's save list context
