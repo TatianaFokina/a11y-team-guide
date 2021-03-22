@@ -1,8 +1,5 @@
-// TODO Add svg icons with aria-hidden="true"
-
-.toggle
-    input.toggle__input.visually-hidden(type="checkbox" id="colorToggle")
-    label(for="colorToggle").toggle__label
-        span.toggle__label-name Тёмная тема
-        span.toggle__label-control
-            span.toggle__label-control-circle
+.theme-switcher
+	button(aria-hidden="false").switch-btn.switch-btn--dark Тёмная тема
+		img(src="/../../images/ico-moon.svg" alt="").switch-btn__img
+	button(aria-hidden="true").switch-btn.switch-btn--light.switch-btn--hidden Светлая тема
+		img(src="/../../images/ico-sun.svg" alt="").switch-btn__img
