@@ -8,10 +8,15 @@ a {
 	border-bottom: 2px solid;
 	border-bottom-color: $link-underline-color;
 	
-	transition: all 0.3s ease;
-	
 	&:hover {
 		background-color: var(--link-hover);
+		
+		transition: all 0.3s ease;
+	}
+	
+	&:focus {
+		outline: 2px dotted $focus-color;
+		outline-offset: 1px;
 	}
 }
 
@@ -27,7 +32,7 @@ a {
 	
 	font-size: $font-size-sm;
 	font-weight: bold;
-	color: $text-color;
+	color: var(--text-color);
 	
 	&:focus {
 		top: 0;
@@ -40,6 +45,7 @@ a {
 		transform: translateX(-50%);
 	}
 }
+
 
 
 

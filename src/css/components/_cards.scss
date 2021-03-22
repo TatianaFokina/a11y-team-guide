@@ -31,9 +31,14 @@ $card-width: 295px;
 	
 	&:hover {
 		background-color: var(--card-hover);
-		box-shadow: $card-border-color 0 0 0 2px;
+		box-shadow: $card-border-color 0 0 0 1px;
 		
 		transition: all 0.2s ease-in-out;
+	}
+	
+	&:focus-within {
+		outline: 3px dotted $focus-color;
+		outline-offset: 4px;
 	}
 }
 
@@ -56,6 +61,10 @@ $card-width: 295px;
 	&:active {
 		color: inherit;
 		background-color: transparent;
+	}
+	
+	&:focus {
+		outline: none;
 	}
 }
 
