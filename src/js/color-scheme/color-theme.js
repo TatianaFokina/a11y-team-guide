@@ -19,7 +19,7 @@ export function colorTheme() {
 		}
 		// Resets theme selection
 		else {
-			localStorage.removeItem('themeSwitch');
+			localStorage.setItem('themeSwitch', 'light');
 		}
 	});
 
@@ -46,7 +46,8 @@ export function colorTheme() {
 	}
 
 	function initTheme() {
-		let $initThemeIsDark = (localStorage.getItem('themeSwitch') !== null && localStorage.getItem('themeSwitch') === 'dark');
+		const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+		let $initThemeIsDark = ((localStorage.getItem('themeSwitch') !== null && localStorage.getItem('themeSwitch') === 'dark') || (prefersDark && !localStorage.getItem('themeSwitch')));
 
 		// Switches to a specific theme on a load page
 		if ($initThemeIsDark) {
