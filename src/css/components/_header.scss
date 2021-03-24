@@ -9,6 +9,7 @@ $list-separator-left: 20px;
 .header-container {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 	
 	padding-top: $gap-4x;
 	padding-bottom: $gap-3x;
@@ -17,7 +18,7 @@ $list-separator-left: 20px;
 .navigation {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	
 	width: 100%;
 }
