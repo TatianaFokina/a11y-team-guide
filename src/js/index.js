@@ -1,3 +1,5 @@
-import {switchScheme} from './color-scheme/dark-scheme.js';
+import {colorTheme} from './color-scheme/color-theme.js';
+import {keyboardFocus} from './focus/keyboard-focus.js';
 
-switchScheme();
+colorTheme();
+keyboardFocus();
