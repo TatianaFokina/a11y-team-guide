@@ -3,7 +3,7 @@
 // @import "_mixins.scss";
 
 // Core styles
-@import "basic/_color-scheme";
+@import "basic/color-theme";
 @import "basic/_global";
 @import "basic/_fonts";
 @import "basic/_layout";
@@ -15,7 +15,7 @@
 @import "components/_headings";
 @import "components/_lists";
 @import "components/_links";
-@import "components/_color-scheme-control";
+@import "components/color-theme-control";
 @import "components/_cards";
 @import "components/_images";
 @import "components/_snippets";
