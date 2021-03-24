@@ -35,11 +35,11 @@ $card-width: 295px;
 		
 		transition: all 0.2s ease-in-out;
 	}
-	
-	&:focus-within {
-		outline: 3px dotted $focus-color;
-		outline-offset: 4px;
-	}
+}
+
+.keyboard-focus .card:focus-within {
+	outline: 3px dotted $focus-color;
+	outline-offset: 4px;
 }
 
 .card__img {
@@ -62,10 +62,10 @@ $card-width: 295px;
 		color: inherit;
 		background-color: transparent;
 	}
-	
-	&:focus {
-		outline: none;
-	}
+}
+
+.keyboard-focus .card__link:focus {
+	outline: 0;
 }
 
 .card__link:after {

@@ -9,6 +9,11 @@
 	background: $selection-color;
 }
 
+a,
+button {
+	outline: 0;
+}
+
 html {
 	font-size: $font-size-root;
 }

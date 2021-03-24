@@ -13,11 +13,11 @@ a {
 		
 		transition: all 0.3s ease;
 	}
-	
-	&:focus {
-		outline: 2px dotted $focus-color;
-		outline-offset: 1px;
-	}
+}
+
+.keyboard-focus a:focus {
+	outline: 2px dotted $focus-color;
+	outline-offset: 1px;
 }
 
 // Skip link
