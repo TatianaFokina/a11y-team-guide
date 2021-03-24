@@ -1,9 +1,6 @@
 @import "../_variables.scss";
 
 .switch-btn {
-	display: inline-flex;
-	align-items: center;
-	
 	padding: $gap-1x $gap-2x;
 	
 	font-size: $font-size-base;
@@ -17,17 +14,18 @@
 	&:hover {
 		background-color: var(--switcher-hover);
 	}
-	
-	&:focus {
-		outline: 2px dotted $focus-color;
-		outline-offset: 2px;
-	}
 }
 
-.switch-btn__img {
+.keyboard-focus .switch-btn:focus {
+	outline: 2px dotted $focus-color;
+	outline-offset: 2px;
+}
+
+.switch-btn__content {
+	display: inline-flex;
+	align-items: center;
+}
+
+.switch-btn__content-img {
 	margin-left: $gap-1x;
-}
-
-.switch-btn--hidden {
-	display: none;
 }
