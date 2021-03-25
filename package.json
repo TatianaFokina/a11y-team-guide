@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "rimraf test && parcel src/pug/content/**/*.pug --no-source-maps --no-cache --log-level 4 --out-dir test",
-    "build": "rimraf docs && parcel build src/pug/content/**/*.pug --no-source-maps --no-cache --no-content-hash --no-minify --out-dir docs"
+    "build": "rimraf docs && parcel build src/pug/content/**/*.pug --no-source-maps --no-cache --no-content-hash --no-minify --out-dir docs --public-url /a11y-team-guide/"
   },
   "author": "Tatiana Fokina",
   "license": "ISC",
