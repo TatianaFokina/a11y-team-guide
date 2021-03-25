@@ -1,13 +1,16 @@
 @import "../_variables.scss";
 @import "../mixins.scss";
 
+$switch-btn-height: 48px;
+
 .switch-btn {
 	flex: 0 0 auto;
 	
-	padding: $gap-1x $gap-2x;
+	padding: 0 $gap-2x;
 	
 	font-size: $font-size-sm;
 	font-family: inherit;
+	line-height: $switch-btn-height;
 	
 	border: 3px solid var(--switcher-border);
 	border-radius: 33px;
