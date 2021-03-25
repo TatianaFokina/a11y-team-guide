@@ -3,23 +3,15 @@
 $extra-guides-item-gap: 5px;
 
 ul {
-	list-style: none;
-}
-
-li {
-	position: relative;
-	
-	&:before {
-		content: "\200B⁃";
-		position: absolute;
-		display: inline-block;
-		
-		left: -$gap-2x;
-	}
+	list-style-type: square;
 }
 
 .extra-guides__list-item {
 	padding-bottom: $extra-guides-item-gap;
+}
+
+.navigation-list {
+	list-style: none;
 }
 
 // Hack for assistive technology + Safari. It's save list context
