@@ -14,5 +14,5 @@ npm test
 ```
 Запуск финальной сборки для деплоя:
 ```
-npm public
+npm run build
 ```
