@@ -1,9 +1,6 @@
 @import "../_variables.scss";
 @import "../mixins.scss";
 
-$card-width: 295px;
-$card-width-mobile: 100%;
-
 .cards-list {
 	display: flex;
 	flex-direction: column;
@@ -25,7 +22,7 @@ $card-width-mobile: 100%;
 	justify-content: center;
 	align-items: center;
 	
-	width: $card-width-mobile;
+	width: 100%;
 	padding: $gap-3x;
 	
 	border-width: 3px;
@@ -47,10 +44,6 @@ $card-width-mobile: 100%;
 }
 
 @include media(sm) {
-	.card {
-		width: $card-width;
-	}
-	
 	.card:not(:last-of-type) {
 		margin-right: $gap-3x;
 		margin-bottom: 0;
