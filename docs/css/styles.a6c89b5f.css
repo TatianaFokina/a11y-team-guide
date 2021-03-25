@@ -49,21 +49,21 @@ body.dark-theme {
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url("/fonts/ibm-plex-sans-v8-latin_cyrillic-regular.4207f821.woff2") format("woff2"), url("/fonts/ibm-plex-sans-v8-latin_cyrillic-regular.068097ac.woff") format("woff");
+  src: url("/a11y-team-guide/fonts/ibm-plex-sans-v8-latin_cyrillic-regular.4207f821.woff2") format("woff2"), url("/a11y-team-guide/fonts/ibm-plex-sans-v8-latin_cyrillic-regular.068097ac.woff") format("woff");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: bold;
   font-display: swap;
-  src: url("/fonts/ibm-plex-sans-v8-latin_cyrillic-700.68da73c2.woff2") format("woff2"), url("/fonts/ibm-plex-sans-v8-latin_cyrillic-700.90d8b69e.woff") format("woff");
+  src: url("/a11y-team-guide/fonts/ibm-plex-sans-v8-latin_cyrillic-700.68da73c2.woff2") format("woff2"), url("/a11y-team-guide/fonts/ibm-plex-sans-v8-latin_cyrillic-700.90d8b69e.woff") format("woff");
 }
 @font-face {
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: normal;
   font-display: swap;
-  src: url("/fonts/ibm-plex-mono-v6-latin-regular.e461007c.woff2") format("woff2"), url("/fonts/ibm-plex-mono-v6-latin-regular.faa8694e.woff") format("woff");
+  src: url("/a11y-team-guide/fonts/ibm-plex-mono-v6-latin-regular.e461007c.woff2") format("woff2"), url("/a11y-team-guide/fonts/ibm-plex-mono-v6-latin-regular.faa8694e.woff") format("woff");
 }
 * {
   box-sizing: border-box;
