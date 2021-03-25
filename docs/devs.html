@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="Рекомендации и советы по цифровой доступности для разработчиков.">
+    <title>Для разработчиков — Гайды по доступности</title>
+    <link rel="stylesheet" href="/a11y-team-guide/css/styles.a6c89b5f.css">
+    <meta property="og:title" content="Для разработчиков — Гайды по доступности">
+    <meta property="og:description" content="Рекомендации и советы по цифровой доступности для разработчиков.">
+    <meta property="og:site_name" content="Для разработчиков — Гайды по доступности">
+    <meta property="og:image" content="/a11y-team-guide/assets/og-a11y-guides.e8724b0a.png">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Для разработчиков — Гайды по доступности">
+    <meta name="twitter:description" content="Рекомендации и советы по цифровой доступности для разработчиков.">
+    <meta name="twitter:image" content="/a11y-team-guide/assets/og-a11y-guides.e8724b0a.png">
+    <link rel="image_src" href="/a11y-team-guide/assets/og-a11y-guides.e8724b0a.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/a11y-team-guide/assets/favicon-16x16.1921df0f.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/a11y-team-guide/assets/favicon-32x32.68a5e30c.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/a11y-team-guide/assets/apple-touch-icon.6e4e53fe.png">
+  </head>
+  <body><a class="skip-link" href="#main-content">К основному контенту</a>
+    <header class="header">
+      <div class="container header-container"><a class="logo-link" href="./" aria-label="Гайды по веб-доступности"><svg width="76" height="75" viewBox="0 0 89 88" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+	<path class="logo-icon" d="M87.9 53.4L80.5 48.4V33.4L87.9 28.5C88.3 28.2 88.6 27.8 88.6 27.3C88.6 26.8 88.3 26.3 87.9 26.1L49.8 0.499994C49.3 0.199994 48.6 0.199994 48.1 0.499994L1.1 31.9C0.9 32 0.8 32.1 0.7 32.3C0.7 32.3 0.7 32.3 0.7 32.4C0.5 32.7 0.5 32.9 0.5 33.2V60.7C0.5 61.2 0.8 61.7 1.2 61.9L39.3 87.3C39.6 87.5 39.8 87.6 40.1 87.6C40.4 87.6 40.7 87.5 40.9 87.3L88 55.9C88.4 55.6 88.7 55.2 88.7 54.7C88.6 54.1 88.3 53.6 87.9 53.4ZM49 3.59999L84.4 27.2L78.6 31C78.3 31.1 78 31.3 77.8 31.5L40 56.7L11.6 37.8C11.5 37.7 11.4 37.7 11.4 37.6L4.6 33.1L49 3.59999ZM12.1 41.8L39.1 59.8C39.6 60.1 40.3 60.1 40.8 59.8L77.5 35.3V47.6L40.2 72.2L12.1 54.2V41.8ZM40 84.2L3.4 59.8V36L9.2 39.8V55C9.2 55.5 9.5 56 9.9 56.3L39.5 75.3C39.7 75.5 40 75.5 40.3 75.5C40.6 75.5 40.9 75.4 41.1 75.3L78.5 50.7L84.4 54.7L40 84.2Z"></path>
+	<path d="M42.5 17.3L60.3 29.5C60.6 29.7 60.9 29.8 61.1 29.8C61.6 29.8 62 29.6 62.3 29.1C62.8 28.4 62.6 27.5 61.9 27L44.2 14.8C43.5 14.3 42.6 14.5 42.1 15.2C41.6 15.9 41.8 16.8 42.5 17.3Z" fill="#ed3c20"></path>
+</svg>
+</a>
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item"><a class="navigation-list__item-link" href="/a11y-team-guide/devs.html">Гайд для разработчиков</a></li>
+            <li class="navigation-list__item"><a class="navigation-list__item-link" href="/a11y-team-guide/designers.html">Гайд для дизайнеров</a></li>
+          </ul>
+        </nav>
+        <button class="switch-btn" aria-live="polite"><span class="switch-btn__content switch-btn__content--dark" aria-label="Включить тёмную тему">Тёмная тема<img class="switch-btn__content-img" src="/a11y-team-guide/assets/ico-moon.22f153a4.svg" alt=""></span><span class="switch-btn__content switch-btn__content--light" aria-label="Включить светлую тему" style="display: none;">Светлая тема<img class="switch-btn__content-img" src="/a11y-team-guide/assets/ico-sun.c07ec31b.svg" alt=""></span></button>
+      </div>
+    </header>
+    <div class="content">
+      <div class="container">
+        <main id="main-content">
+          <h1 class="heading-first-lvl">Для разработчиков</h1>
+          <h2 class="heading-second-lvl">Помните про семантику и избегайте дивной вёрстки</h2>
+          <p><strong>Семантика важна для вспомогательных технологий и доступности</strong>. Она отражает функции, которые выполняют элементы на странице, и делает их поведение более предсказуемым для пользователей.</p>
+          <p>Не забывайте, что для каждого вида контента есть разные теги, как семантические, так и нет. Про теги можно больше узнать на <a href="https://html5doctor.com/" lang="en" target="_blank" rel="noopener noreferrer">HTML5 Doctor</a>.</p>
+          <h2 class="heading-second-lvl">Не путайте кнопки и ссылки</h2>
+          <h3 class="heading-third-lvl">Кнопки</h3>
+          <ul>
+            <li>Фокус с клавиатуры по умолчанию.</li>
+            <li>Клик по нажатию на пробел.</li>
+            <li>Подсказка для скринридера с помощью <code>role="button"</code>.</li>
+            <li>Состояния <code>∶focus</code>, <code>∶hover</code>, <code>∶active</code> и <code>∶disabled</code>.</li>
+            <li>Блокировка с помощью атрибута <code>disabled</code>.</li>
+          </ul>
+          <p>Для чего нужны кнопки:</p>
+          <ul>
+            <li>отправить данные формы на сервер;</li>
+            <li>очистить форму;</li>
+            <li>открыть модальное окно или скрытый блок в аккордеоне;</li>
+            <li>вызвать всплывающее меню;</li>
+            <li>переключить интерфейс;</li>
+            <li>проиграть медиа-контент.</li>
+          </ul>
+          <h3 class="heading-third-lvl">Ссылки</h3>
+          <ul>
+            <li>Принимают фокус по умолчанию с помощью атрибута <code>href=""</code>.</li>
+            <li>Клик с помощью клавиши <kbd>Enter</kbd>.</li>
+            <li>Имеют встроенную роль <span lang="en">link</span>.</li>
+            <li>Состояния <code>∶link</code>, <code>∶visited</code>, <code>∶focus</code>, <code>∶hover</code> и <code>∶active</code>.</li>
+            <li>Могут открываться в новых окнах.</li>
+            <li>Можно сделать неактивными с помощью <code>tabindex="-1"</code> и <code>aria-hidden="true"</code>.</li>
+          </ul>
+          <p>Для чего нужны ссылки:</p>
+          <ul>
+            <li>изменить <span lang="en">URL</span> и перейти на новую страницу, к окну или к определённой части страницы;</li>
+            <li>связать разные части приложения с отрисовкой на клиенте;</li>
+            <li>вызвать браузерную перерисовку/перезагрузку.</li>
+          </ul>
+          <p>Ссылка со значением <code>href="#"</code>, <code>href="javascript:void(0);"</code> или с другим похожим значением атрибута&nbsp;—&nbsp;уже не ссылка, а кнопка.</p>
+          <h2 class="heading-second-lvl">Используйте списки</h2>
+          <p>Скринридеры превращают списки в оглавления, с помощью которых пользователи могут быстрее перемещаться по странице.</p>
+          <p>Где использовать списки:</p>
+          <ul>
+            <li>для навигации в меню;</li>
+            <li>для списка вкладок;</li>
+            <li>для списка ссылок. Например, на социальные сети;</li>
+            <li>когда обычный текст должен быть списком;</li>
+            <li>для списка языков интерфейса, когда их на сайте несколько.</li>
+          </ul>
+          <pre><code>&lt;ul>
+	&lt;li lang="ru">Русский&lt;/li>
+	&lt;li lang="en">English&lt;/li>
+&lt;/ul></code></pre>
+          <h2 class="heading-second-lvl">Не забывайте про атрибут <code class="code-heading">lang=""</code></h2>
+          <p>Благодаря атрибуту языка скринридеры понимают, на каком языке объявлять контент документа.</p>
+          <p>Если на странице встречаются слова на языке, отличающимся от основного, то можно оборачивать их в тег <code>&lt;span></code> с нужным значением атрибута языка.</p>
+          <pre><code>&lt;p>Проснувшись однажды утром после беспокойного сна, &lt;span lang="de">Gregor Samsa&lt;/span> обнаружил, что он у себя в постели превратился в страшное насекомое.&lt;/p></code></pre>
+          <h2 class="heading-second-lvl">Добавляйте для каждого тега img атрибут alt</h2>
+          <p>С помощью <code>alt=""</code> мы:</p>
+          <ul>
+            <li>описываем содержимое или функции изображений (часть ссылки, кнопка, превью, аватарка);</li>
+            <li>называем картинки, которые не загрузились;</li>
+            <li>предоставляем поисковым системам контекст картинок вне сайта, на котором они расположены.</li>
+          </ul>
+          <h3 class="heading-third-lvl">Основные правила альтернативного текста</h3>
+          <ul>
+            <li>Текст зависит от контекста.</li>
+            <li>Точность и краткость, если это не изображение с большим количеством деталей, например, скриншот.</li>
+            <li>Если на картинке есть текст, то его можно использовать в качестве альтернативного.</li>
+            <li>Логотип в хедере&nbsp;—&nbsp;название компании или продукта.</li>
+            <li>В картинках у кнопок дублируйте её функцию.
+              <pre><code>&lt;button>
+	&lt;img src="/" alt="Искать по сайту">
+&lt;button></code></pre>
+            </li>
+            <li>Не используйте слова «изображение», «картинка». Это дублирует их роль, и скринридер произнесёт два одинаковых слова подряд.</li>
+            <li>Для длинных описаний можно использовать <code>longdesc=""</code> со ссылкой на страницу с полным описанием картинки, но его поддерживают не все скринридеры.</li>
+            <li>В конце можно ставить точку, чтобы скринридер делал паузу.</li>
+          </ul>
+          <figure class="figure"><img class="figure__img" src="/a11y-team-guide/assets/this-is-fine.cf6630ff.png" alt="Мем с собакой, у которой всё в порядке.">
+            <figcaption class="figure__caption">alt=&quot;Собака сидит на табуретке рядом со столом в горящей комнате, пьёт кофе и говорит, что всё в порядке.&quot;.</figcaption>
+          </figure>
+          <h3 class="heading-third-lvl">Когда и как использовать атрибут</h3>
+          <ul>
+            <li>Атрибут не нужен для аватарок и декоративных изображений. В этих случаях нужно оставлять его пустым.</li>
+            <li>Заворачивайте иконки и текст в одну ссылку. В этом случае <code>alt=""</code> не может быть пустым или отсутствовать.</li>
+            <li>Для изображений в <code>&lt;figure></code> и c <code>&lt;figcaption></code> всё равно нужно задать альтернативное описание для картинки.</li>
+          </ul>
+          <h2 class="heading-second-lvl">Соблюдайте иерархию заголовков и используйте на каждой странице один <code class="code-heading">&lt;h1></code></h2>
+          <p>Не пропускайте уровни заголовков. Начинайте всегда с <code>&lt;h1</code>, а за ним размещайте заголовки более низких уровней.</p>
+          <pre><code>&lt;h1>&lt;/h1>
+&lt;h2>&lt;/h2>
+&lt;h3>&lt;/h3>
+&lt;h4>&lt;/h4>
+&lt;h5>&lt;/h5>
+&lt;h6>&lt;/h6></code></pre>
+          <p>Если у заголовка есть подзаголовки, то тоже соблюдайте правильную иерархию.</p>
+          <pre><code>&lt;h1>&lt;/h1>
+&lt;h2>&lt;/h2>
+	&lt;h3>&lt;/h3>
+	&lt;h4>&lt;/h4>
+&lt;h3>&lt;/h3>
+	&lt;h4>&lt;/h4>
+	&lt;h5>&lt;/h5></code></pre>
+          <h2 class="heading-second-lvl">Добавляйте ссылку с переходом к основному контенту&nbsp;—&nbsp;skip link</h2>
+          <p>Это полезно, когда в меню много пунктов. Такая ссылка поможет пользователям вспомогательных технологий сразу же переходить к основному контенту без утомительного перемещения от первого пункта меню к последнему.</p>
+          <p>Можно проверить как она работает на <a href="https://www.nytimes.com" target="_blank" rel="noopener noreferrer">сайте <span lang="en">The New York Times</span></a> при навигации с клавиатуры.</p>
+          <p>Реализацию можно посмотреть в <a href="https://codepen.io/shadeed/pen/64636e8ac6f3554f47455895d23a2b81" target="_blank" rel="noopener noreferrer">демке на <span lang="en">CodePen</span></a>.</p>
+          <h2 class="heading-second-lvl">Связывайте поля форм с лейблами или задавайте полям атрибут <code class="code-heading">aria-label</code></h2>
+          <p>Связывайте <code>&lt;label></code> с <code>&lt;input></code> при помощи атрибута <code>for=""</code>.</p>
+          <pre><code>&lt;label for="input">Лейбл&lt;/label>
+&lt;input type="text" class="form-control" id="input"></code></pre>
+          <p>Если в дизайне лейблы к полям не предусмотрены, делайте их скрытыми для обычных пользователей при помощи вспомогательного класса <code>.visually-hidden</code>.</p>
+          <p>Ещё один способ описать поле&nbsp;—&nbsp;задать ему атрибут <code>aria-label=""</code>. Значение атрибута будет доступно только вспомогательным технологиям. Но этот способ подходит для случаев, когда это не полноценная форма, а одиночное поле с кнопкой, например, поиск.</p>
+          <pre><code>&lt;input type="text" name="search" aria-label="Search">
+&lt;button type="submit">Поиск&lt;/button></code></pre>
+          <p>На способ выше похож способ с <code>aria-labelledby=""</code>. Значение атрибута также будет доступно только для пользователей вспомогательных технологий. Его стоит применять, когда это одиночное поле с кнопкой.</p>
+          <pre><code>&lt;input type="text" name="search" aria-labelledby="search-button">
+&lt;button id="search-button" type="submit">Поиск&lt;/button></code></pre>
+          <p>Метод с атрибутом <code>title=""</code> работает только в случае пользователей, которые не пользуются вспомогательными технологиями. Значение атрибута не доступно для таких технологий, поэтому его не рекомендуется использовать.</p>
+          <p>Подробнее о лейблах к полям можно узнать из <a href="https://www.w3.org/WAI/tutorials/forms/labels/" target="_blank" rel="noopener noreferrer">тьюториала <span lang="en">W3C</span></a>.</p>
+          <h2 class="heading-second-lvl">Используйте <code class="code-heading">title</code> только тогда, когда это действительно нужно</h2>
+          <p>Атрибут можно использовать для фреймов и иногда для изображений. Но, в большинстве случаев, достаточно <code>aria-label=""</code>. Есть несколько причин для того, чтобы не использовать <code>title</code>:</p>
+          <ul>
+            <li>плохие <span lang="en">SEO</span>-практики привели к тому, что вспомогательные технологии и браузеры теперь игнорируют содержимое этого атрибута;</li>
+            <li>его содержимое не переводится автоматически;</li>
+            <li>не все пользователи поймут, что у элемента есть этот атрибут;</li>
+            <li>если контент действительно важен, то его вообще не нужно скрывать, тем более так.</li>
+          </ul>
+          <p>Больше подробностей в статье <a href="https://developer.yoast.com/blog/dont-rely-title-attribute/" lang="en" target="_blank" rel="noopener noreferrer">«The a11y Monthly: Why you shouldn’t rely on the title attribute»</a>.</p>
+          <h3 class="heading-third-lvl"><code class="code-heading">title</code> для <code class="code-heading">iframe</code> и <code class="code-heading">frame</code></h3>
+          <p>В случае фреймов задавайте атрибуту понятное значение.</p>
+          <pre><code>&lt;iframe src="https://api-maps.yandex.ru/services/inception/..." width="0" height="0" scrolling="no" frameborder="0" ... title="Яндекс.Карты"></code></pre>
+          <h2 class="heading-second-lvl">Не отменяйте <code class="code-heading">outline</code> для интерактивных элементов при фокусе</h2>
+          <p>Это важно для пользователей, которые пользуются клавиатурой для навигации по сайту. Просите дизайнеров проработать стили, можно заменить <code>outline</code> на <code>box-shadow</code>.</p>
+          <p>Плохой пример&nbsp;—&nbsp;<a href="https://market.yandex.ru/" target="_blank" rel="noopener noreferrer">Яндекс.Маркет</a>. Попробуйте пройти по странице с помощью клавиш.</p>
+          <p>Хороший пример&nbsp;—&nbsp;<a href="https://www.xbox.com/ru-RU/" target="_blank" rel="noopener noreferrer">сайт <span lang="en">Xbox</span></a>.</p>
+          <h2 class="heading-second-lvl">Увеличивайте область клика с помощью <code class="code-heading">padding</code></h2>
+          <p><strong>Оптимальный размер кликабельной области&nbsp;—&nbsp;48×48 px</strong>.</p>
+          <p>Особенно это важно делать в меню. Между пунктами меню не должно быть неактивных зазоров, поэтому задавайте одинаковые <code>padding</code> для ссылок слева и справа от них. Для последних и первых можно отменить отступ слева или справа соответственно.</p>
+          <h2 class="heading-second-lvl">Используйте <span lang="en">ARIA</span>-роли только тогда, когда это действительно нужно</h2>
+          <ul>
+            <li><strong>Лучше никакой <span lang="en">ARIA</span>, чем плохая <span lang="en">ARIA</span></strong>.</li>
+            <li>Если используете <span lang="en">ARIA</span>, то не дублируйте уже встроенные в элементы роли.</li>
+          </ul>
+          <h3 class="heading-third-lvl"><code class="code-heading">role="none"</code> и <code class="code-heading">role="presentation"</code></h3>
+          <p>Обе роли выполняют одинаковую функцию&nbsp;—&nbsp;отменяют семантику элемента.</p>
+          <p><span lang="en">ARIA 1.1</span>: «До тех пор, пока не будет хорошо поддерживаться <code>role="none"</code>, рекомендуется использовать только <code>role="presentation"</code> или избыточный вариант с фоллбеком <code>role="none presentation"</code>».</p>
+          <p>Можно использовать при табличной вёрстке. Чтобы смягчить негативные последствия такого выбора, у таблиц можно удалить семантическое свойство при помощи <code>role="presentation"</code> для элемента <code>table</code>. Это сделает такой контент более понятным для пользователей скринридеров.</p>
+          <p>Можно использовать для прогрессивного улучшения разметки, если <span lang="en">JavaScript</span> недоступен, и при приведении разметки в соответствие с требованиями <span lang="en">ARIA<span>. Например, для панели вкладок.</span></span></p>
+          <pre><code>&lt;ul role="tablist">
+	&lt;li role="presentation">
+		&lt;a href="#panel_1"
+		role="tab"
+		aria-selected="true/false"
+		aria-controls="panel_1">
+		&lt;/a>
+	&lt;/li>
+&lt;/ul></code></pre>
+          <p>Подробнее в статье Скотта О’Хары <a href="https://www.scottohara.me/blog/2018/05/05/hidden-vs-none.html" lang="en" target="_blank" rel="noopener noreferrer">«Know your ARIA: 'Hidden' vs 'None'»</a>.</p>
+          <h3 class="heading-third-lvl"><code class="code-heading">aria-label</code></h3>
+          <p>Этот атрибут используется для элементов без текстового содержимого. Например, в ссылках на иконочных шрифтах, в ссылках-изображениях и в кнопках без текста. Сами иконки скрываются от вспомогательных технологий при помощи <code>aria-hidden="true"</code>.</p>
+          <pre><code>&lt;a href="{{this.url}}" target="_blank" class="socials__link" title="{{this.title}}" aria-label="{{this.title}}">
+	&lt;i class="fa fa-{{@key}}" aria-hidden="true">
+&lt;/a></code></pre>
+          <ul>
+            <li>В атрибуте кратко описывайте то, что делает кнопка или ссылка.</li>
+            <li>Атрибут не переводится сервисами автоматического перевода.</li>
+          </ul>
+          <p><strong>Отсутствие текста у кнопок и ссылок&nbsp;—&nbsp;критическая ошибка</strong>.</p>
+          <h3 class="heading-third-lvl"><code class="code-heading">aria-labelledby</code></h3>
+          <p>Атрибут создаёт связь между объектами и их метками.</p>
+          <p>Вспомогательные технологии используют его, чтобы собирать все метки в каталог документа, из которого пользователь может перемещаться между ними.</p>
+          <p>Можно использовать атрибут в дополнение к элементам форм, чтобы связать статический текст с виджетами, группами элементов, панелями, областями, которые имеют заголовок, определения и другие типы объектов.</p>
+          <p>Несколько значений атрибута перечисляются через пробел.</p>
+          <p>Пример с несколькими лейблам:</p>
+          <pre><code>&lt;div id="billing">Биллинг&lt;/div>
+&lt;div>
+	&lt;div id="name">Имя&lt;/div>
+	&lt;input type="text" aria-labelledby="billing name"/>
+&lt;/div>
+&lt;div>
+	&lt;div id="address">Адрес&lt;/div>
+	&lt;input type="text" aria-labelledby="billing address"/>
+&lt;/div></code></pre>
+          <p>Пример с группой переключателей:</p>
+          <pre><code>&lt;div id="radio_label">Переключатели&lt;/div>
+&lt;ul role="radiogroup" aria-labelledby="radio_label">
+	&lt;li role="radio">Пункт 1&lt;/li>
+	&lt;li role="radio">Пункт 2&lt;/li>
+	&lt;li role="radio">Пункт 3&lt;/li>
+&lt;/ul></code></pre>
+          <p>Больше примеров использования можно найти в статье про <code>aria-labelledby</code> на <a href="https://developer.mozilla.org/ru/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute" lang="en" target="_blank" rel="noopener noreferrer">MDN</a>.</p>
+          <h2 class="heading-second-lvl">Делайте интерактивные области <span lang="en">Live Region</span></h2>
+          <p>Если на странице есть часть, содержимое которой изменяется, то нужно сделать её <span lang="en">live region</span>. Тогда скринридеры смогут держать своих пользователей в курсе всех изменений.</p>
+          <p>Сделать такую часть страницы интерактивной можно с помощью нескольких ролей.</p>
+          <p><code>role="alert"</code>&nbsp;—&nbsp;важные ошибки, предупреждения. Для большей совместимости добавляйте её к нужным элементам вместе с атрибутом <code>aria-live="assertive"</code>.</p>
+          <p><code>aria-live=""</code>&nbsp;—&nbsp;атрибут для определения срочности сообщения об изменениях. Там, где об изменениях не нужно объявлять, используйте <code>aria-live="off"</code>. В большинстве случаев не нужно срочно сообщать об изменениях, поэтому в них пригодится <code>aria-live="polite"</code>. Иногда, когда речь идёт о важном сообщении, например, серверной ошибке, можно использовать <code>aria-live="assertive"</code>.</p>
+          <p><code>role="status"</code>&nbsp;—&nbsp;сообщения о менее важных ошибках и предупреждениях. Например, сообщение об автосохранении, неправильно заполненном поле и тому подобном. Для совместимости следует сочетать эту роль с атрибутом <code>aria-live="polite"</code>.</p>
+          <p><code>role="log"</code>&nbsp;—&nbsp;история сообщений, список ошибок и другое, где важна последовательность обновления информации. Для большей совместимости используйте вместе с ней атрибут <code>aria-live="polite"</code>.</p>
+          <p><code>role="timer"</code>&nbsp;—&nbsp;таймер, счётчик или секундомер. Не забудьте об <code>aria-live="off"</code> для лучшей совместимости.</p>
+          <p>Подробнее о ролях и значениях атрибута <code>aria-live</code> в <a href="https://web-standards.ru/articles/aria-live-regions/" target="_blank" rel="noopener noreferrer">статье «Всё, что нужно знать про <span lang="en">ARIA Live Regions</span>»</a>.</p>
+          <h2 class="heading-second-lvl">Учитывайте какие CSS-свойства попадают в дерево доступности</h2>
+          <p>Их не так много:</p>
+          <ul>
+            <li><code>display: none</code> и <code>display: block</code>.</li>
+            <li><code>visibility: hidden</code>, <code>visibility: collapse</code> (для строк и ячеек таблиц) и <code>visibility: visible</code>.</li>
+            <li><code>list-style: none</code> (в <span lang="en">Safari</span>).</li>
+          </ul>
+          <h3 class="heading-third-lvl"><code class="code-heading">list-style: none</code></h3>
+          <p><strong>В <span lang="en">Safari</span> этот атрибут отменяет семантику списков</strong>.</p>
+          <p>Если важно сохранить семантику списка во всех браузерах, то есть три варианта решения.</p>
+          <p>Первый вариант&nbsp;—&nbsp;явно задать роль для тегов <code>&lt;ul></code> или <code>&lt;ol></code> с помощью атрибута <code>role="list"</code>. Однако <span lang="en">WAI-ARIA</span> не рекомендует дублировать роли элементов.</p>
+          <p>Можно использовать пробел нулевой ширины.</p>
+          <pre><code>.list li {
+	list-style-type: none;
+}
+
+.list li::before {
+	content: "\200B";
+	position: absolute;
+}</code></pre>
+          <p>Наконец, есть хак с <code>url(#!)</code>.</p>
+          <pre><code>ul {
+	list-style: none;
+}
+
+ol, ul {
+	list-style: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E");
+}</code></pre>
+          <p>Этот хак может привести к появлению лишнего отступа сверху у элементов навигации в <span lang="en">IE11</span> и <span lang="en">Edge</span> 42.</p>
+          <h2 class="heading-second-lvl">Думайте о том, как лучше скрыть элемент</h2>
+          <p>Учтите, важен ли элемент для пользователей, в том числе для тех, кто пользуется скринридерами. Есть несколько возможных сценариев:</p>
+          <ul>
+            <li>всем пользователям нужен элемент;</li>
+            <li>ни обычным пользователям, ни пользователям вспомогательных технологий не нужен элемент;</li>
+            <li>элемент нужно оставить на странице, но скрыть от вспомогательных технологий;</li>
+            <li>элемент нужно убрать со страницы, но оставить его доступным для вспомогательных технологий.</li>
+          </ul>
+          <p>В зависимости от сценария выберите <b>подходящий метод скрытия элемента</b>.</p>
+          <p><code>display: none;</code>: элемент не попадает в дерево доступности, скрыт от вспомогательных технологий и пользователей. Работает везде.</p>
+          <p>Атрибут <code>hidden</code>: элемент не попадает в дерево доступности, скрыт от вспомогательных технологий и пользователей. Не работает в версиях <span lang="en">IE</span>, ниже 11. Лучше делать фоллбек с помощью <code>display: none;</code>.</p>
+          <p><code>visibility: hidden;</code>: элемент не попадает в дерево доступности, скрыт от вспомогательных технологий и пользователей. Работает везде.</p>
+          <p><code>aria-hidden="true"</code>: <b>неинтерактивный элемент</b> не попадает в дерево доступности и скрыт от вспомогательных технологий. Другие пользователи видят элемент. Не работает в версиях <span lang="en">IE</span>, ниже 11.</p>
+          <p>Класс <code>.visually-hidden</code> или <code>.vh</code>: элемент попадает в дерево доступности и к нему имеют доступ вспомогательные технологии. Другие пользователи не видят элемент. Работает везде.</p>
+          <p><code>alt=""</code>: скрывает картинку из дерева доступности. Другие пользователи видят изображение. Работает везде.</p>
+          <h3 class="heading-third-lvl">Класс <code class="code-heading">.visually-hidden</code> или <code class="code-heading">.vh</code></h3>
+          <pre><code>.visually-hidden {
+	position: absolute;
+	left: 0;
+	padding: 0;
+	list-style: none;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+body:hover .visually-hidden a,
+body:hover .visually-hidden input,
+body:hover .visually-hidden button {
+	display: none !important;
+}</code></pre>
+          <h3 class="heading-third-lvl"><code class="code-heading">aria-hidden=""</code></h3>
+          <ul>
+            <li><code>aria-hidden="true"</code> удаляет элемент из дерева доступности, но не скрывает на странице.</li>
+            <li><code>aria-hidden="false"</code> возвращает элемент в дерево доступности.</li>
+          </ul>
+          <p>Используйте атрибут тогда, когда элемент декоративный, дублирующийся или эквивалентный тому, который уже есть на странице. Например, если у вас есть иконочный шрифт.</p>
+          <pre><code>&lt;a href="/">
+	&lt;span class="font-icon font-icon--home" aria-hidden="true">&lt;/span>
+	Главная
+&lt;/a></code></pre>
+          <h2 class="heading-second-lvl">Избегайте авто&shy;воспроизведения видео и фоновых медиа</h2>
+          <p>Во-первых, это раздражает, во-вторых, вызывает чувство тревоги и даже паники у некоторых пользователей.</p>
+          <p><b>Золотое правило медиа-контента</b>: дать пользователям возможность самим управлять им.</p>
+        </main>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer-container"><small class="copyright">© 2020–2021, Татьяна Фокина</small>
+        <div class="rights">Иконки <a href="https://www.flaticon.com/authors/kiranshastry" lang="en" target="_blank" rel="noopener noreferrer">Kiranshastry</a> и <a href="https://www.freepik.com" lang="en" target="_blank" rel="noopener noreferrer">Freepik</a> с <a href="https://www.flaticon.com/" lang="en" target="_blank" rel="noopener noreferrer">Flaticon</a>, <a href="https://www.iconfinder.com" lang="en" target="_blank" rel="noopener noreferrer">Iconfinder</a></div>
+      </div>
+    </footer>
+    <script src="/a11y-team-guide/js/js.e43941f0.js"></script>
+  </body>
+</html>
