@@ -1,7 +1,7 @@
 @import "../_variables.scss";
 @import "../mixins.scss";
 
-$switch-btn-height: 48px;
+$switch-btn-height: 39px;
 
 .switch-btn {
 	flex: 0 0 auto;
@@ -19,12 +19,6 @@ $switch-btn-height: 48px;
 	
 	&:hover {
 		background-color: var(--switcher-hover);
-	}
-}
-
-@include media(sm) {
-	.switch-btn {
-		font-size: $font-size-base;
 	}
 }
 
