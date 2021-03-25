@@ -1,4 +1,5 @@
 @import "../_variables.scss";
+@import "../mixins.scss";
 
 code {
 	word-wrap: break-word;
@@ -8,7 +9,13 @@ code {
 }
 
 .code-heading {
-	font-size: $font-size-lg;
+	font-size: $font-size-md;
+}
+
+@include media(sm) {
+	.code-heading  {
+		font-size: $font-size-lg;
+	}
 }
 
 pre code {

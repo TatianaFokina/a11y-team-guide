@@ -1,13 +1,21 @@
 @import "../_variables.scss";
+@import "../mixins.scss";
 
 $card-width: 295px;
+$card-width-mobile: 100%;
 
 .cards-list {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	
 	margin: 0;
 	padding: 0;
+}
+
+@include media(sm) {
+	.cards-list {
+		flex-direction: row;
+	}
 }
 
 .card {
@@ -17,7 +25,7 @@ $card-width: 295px;
 	justify-content: center;
 	align-items: center;
 	
-	width: $card-width;
+	width: $card-width-mobile;
 	padding: $gap-3x;
 	
 	border-width: 3px;
@@ -26,7 +34,8 @@ $card-width: 295px;
 	border-color: $card-border-color;
 	
 	&:not(:last-of-type) {
-		margin-right: $gap-3x;
+		margin-right: 0;
+		margin-bottom: $gap-3x;
 	}
 	
 	&:hover {
@@ -34,6 +43,17 @@ $card-width: 295px;
 		box-shadow: $card-border-color 0 0 0 1px;
 		
 		transition: all 0.2s ease-in-out;
+	}
+}
+
+@include media(sm) {
+	.card {
+		width: $card-width;
+	}
+	
+	.card:not(:last-of-type) {
+		margin-right: $gap-3x;
+		margin-bottom: 0;
 	}
 }
 
@@ -54,13 +74,19 @@ $card-width: 295px;
 }
 
 .card__link {
-	font-size: $font-size-md;
+	font-size: $font-size-base;
 	
 	&,
 	&:hover,
 	&:active {
 		color: inherit;
 		background-color: transparent;
+	}
+}
+
+@include media(sm) {
+	.card__link  {
+		font-size: $font-size-md;
 	}
 }
 

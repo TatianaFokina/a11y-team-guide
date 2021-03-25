@@ -1,7 +1,9 @@
 @import "../_variables.scss";
+@import "../mixins.scss";
 
 $heading-separator-h: 4px;
 $first-heading-w: 58px;
+$first-heading-w-mobile: 36px;
 
 .heading-first-lvl {
 	&:before {
@@ -9,7 +11,7 @@ $first-heading-w: 58px;
 		display: inline-block;
 		vertical-align: middle;
 		
-		width: $first-heading-w;
+		width: $first-heading-w-mobile;
 		height: $heading-separator-h;
 		margin-right: $gap-1x;
 		
@@ -17,24 +19,59 @@ $first-heading-w: 58px;
 	}
 }
 
-.heading-first-lvl {
-	margin-top: $gap-5x;
-	margin-bottom: $gap-3x;
-	
-	font-size: $font-size-xxl;
+@include media(sm) {
+	.heading-first-lvl:before {
+		width: $first-heading-w;
+	}
 }
 
-.heading-second-lvl {
-	margin-top: $gap-4x;
+.heading-first-lvl {
+	margin-top: $gap-3x;
 	margin-bottom: $gap-2x;
 	
 	font-size: $font-size-xl;
+}
+
+@include media(sm) {
+	.heading-first-lvl {
+		margin-top: $gap-5x;
+		margin-bottom: $gap-3x;
+		
+		font-size: $font-size-xxl;
+	}
+}
+
+.heading-second-lvl {
+	margin-top: $gap-3x;
+	margin-bottom: $gap-2x;
+	
+	font-size: $font-size-lg;
+}
+
+@include media(sm) {
+	.heading-second-lvl {
+		margin-top: $gap-4x;
+		
+		font-size: $font-size-xl;
+	}
 }
 
 .heading-third-lvl {
 	margin-top: $gap-3x;
 	margin-bottom: $gap-2x;
 	
-	font-size: $font-size-lg;
+	font-size: $font-size-md;
 	color: var(--h3-color);
+}
+
+@include media(sm) {
+	.heading-third-lvl {
+		font-size: $font-size-lg;
+	}
+}
+
+.heading-third-lvl,
+.heading-second-lvl,
+.heading-third-lvl {
+	line-height: 1.4;
 }

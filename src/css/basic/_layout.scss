@@ -1,4 +1,5 @@
 @import "../_variables.scss";
+@import "../mixins.scss";
 
 * {
 	box-sizing: border-box;
@@ -26,18 +27,32 @@ body {
 	
 	margin: 0;
 	
-	font-size: $font-size-base;
+	font-size: $font-size-sm;
+	
 	line-height: $line-height;
 	color: var(--text-color);
 	
 	background-color: var(--bg-color);
 }
 
+@include media(sm) {
+	body {
+		font-size: $font-size-base;
+	}
+}
+
+
 .content {
 	//- Sticky footer
 	flex: 1 0 auto;
 	
-	margin-top: $gap-6x;
+	margin-top: $gap-3x;
+}
+
+@include media(sm) {
+	.content {
+		margin-top: $gap-6x;
+	}
 }
 
 small {
@@ -65,5 +80,11 @@ figcaption {
 }
 
 .extra-guides {
-	margin-top: $gap-9x;
+	margin-top: $gap-5x;
+}
+
+@include media(sm) {
+	.extra-guides {
+		margin-top: $gap-9x;
+	}
 }

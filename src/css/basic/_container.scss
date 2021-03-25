@@ -1,10 +1,18 @@
 @import "../_variables.scss";
+@import "../mixins.scss";
 
 .container {
 	width: 100%;
 	max-width: map-get($container-widths, xl);
 	
 	margin: 0 auto;
-	padding-left: $gap-4x;
-	padding-right: $gap-4x;
+	padding-left: $gap-3x;
+	padding-right: $gap-3x;
+}
+
+@include media(md) {
+	.container {
+		padding-left: $gap-4x;
+		padding-right: $gap-4x;
+	}
 }

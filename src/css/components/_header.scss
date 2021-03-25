@@ -1,4 +1,5 @@
 @import "../_variables.scss";
+@import "../mixins.scss";
 
 $list-separator-left: 20px;
 
@@ -8,45 +9,83 @@ $list-separator-left: 20px;
 
 .header-container {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
 	
 	padding-top: $gap-4x;
 	padding-bottom: $gap-3x;
 }
 
+@include media(lg) {
+	.header-container {
+		flex-direction: row;
+	}
+}
+
 .navigation {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	
-	width: 100%;
+	display: block;
+}
+
+@include media(md) {
+	.navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		
+		width: 100%;
+	}
 }
 
 .navigation-list {
 	display: flex;
-	flex-direction: row;
-	margin: 0;
+	flex-direction: column;
+	margin: 0 0 $gap-4x;
 	padding: 0;
 }
 
+@include media(sm) {
+	.navigation-list {
+		flex-direction: row;
+	}
+}
+
+@include media(lg) {
+	.navigation-list {
+		margin: 0;
+	}
+}
+
 .navigation-list__item:not(:last-of-type) {
-	padding-right: $gap-3x;
+	padding-right: 0;
+	padding-bottom: $gap-2x;
 	
 	&:after {
-		content: "✱";
-		display: inline-block;
-		vertical-align: middle;
+		content: "";
+	}
+}
+
+@include media(sm) {
+	.navigation-list__item:not(:last-of-type) {
+		padding-right: $gap-3x;
+		padding-bottom: 0;
 		
-		margin-left: $list-separator-left;
-		
-		color: $secondary-color;
+		&:after {
+			content: "✱";
+			display: inline-block;
+			vertical-align: middle;
+			
+			margin-left: $list-separator-left;
+			
+			color: $secondary-color;
+		}
 	}
 }
 
 // Logo (SVG)
 .logo-link {
 	display: inline-flex;
+	
+	margin-bottom: $gap-4x;
 	
 	&:hover {
 		background-color: transparent;
@@ -56,6 +95,12 @@ $list-separator-left: 20px;
 		fill: $secondary-color;
 		
 		transition: all 0.2s ease-in-out;
+	}
+}
+
+@include media(lg) {
+	.logo-link {
+		margin-bottom: 0;
 	}
 }
 

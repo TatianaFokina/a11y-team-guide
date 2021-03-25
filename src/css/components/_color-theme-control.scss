@@ -1,11 +1,12 @@
 @import "../_variables.scss";
+@import "../mixins.scss";
 
 .switch-btn {
 	flex: 0 0 auto;
 	
 	padding: $gap-1x $gap-2x;
 	
-	font-size: $font-size-base;
+	font-size: $font-size-sm;
 	font-family: inherit;
 	
 	border: 3px solid var(--switcher-border);
@@ -15,6 +16,12 @@
 	
 	&:hover {
 		background-color: var(--switcher-hover);
+	}
+}
+
+@include media(sm) {
+	.switch-btn {
+		font-size: $font-size-base;
 	}
 }
 
