@@ -33,9 +33,6 @@ body {
 	color: var(--text-color);
 	
 	background-color: var(--bg-color);
-	
-	// For smooth switch color themes
-	transition: all 0.2s;
 }
 
 @include media(sm) {
