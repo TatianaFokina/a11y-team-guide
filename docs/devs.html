@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Для разработчиков — Гайды по доступности">
     <meta name="twitter:description" content="Рекомендации и советы по цифровой доступности для разработчиков.">
-    <meta name="twitter:url" content="https://tatianafokina.github.io/a11y-team-guide/devs.html">
+    <meta name="twitter:site" content="https://tatianafokina.github.io/a11y-team-guide/devs.html">
     <meta name="twitter:image" content="/a11y-team-guide/assets/og-a11y-guides.e8724b0a.png">
     <link rel="image_src" href="/a11y-team-guide/assets/og-a11y-guides.e8724b0a.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/a11y-team-guide/assets/favicon-16x16.1921df0f.png">
@@ -46,7 +46,7 @@
         <main id="main-content">
           <h1 class="heading-first-lvl">Для разработчиков</h1>
           <h2 class="heading-second-lvl">Помните про семантику и избегайте дивной вёрстки</h2>
-          <p><strong>Семантика важна для вспомогательных технологий и доступности</strong>. Она отражает функции, которые выполняют элементы на странице, и делает их поведение более предсказуемым для пользователей.</p>
+          <p>Семантика важна для вспомогательных технологий и доступности. Она отражает функции, которые выполняют элементы на странице, и делает их поведение более предсказуемым для пользователей.</p>
           <p>Не забывайте, что для каждого вида контента есть разные теги, как семантические, так и нет. Про теги можно больше узнать на <a href="https://html5doctor.com/" lang="en" target="_blank" rel="noopener noreferrer">HTML5 Doctor</a>.</p>
           <h2 class="heading-second-lvl">Не путайте кнопки и ссылки</h2>
           <h3 class="heading-third-lvl">Кнопки</h3>
@@ -181,11 +181,11 @@
           <p>Плохой пример&nbsp;—&nbsp;<a href="https://market.yandex.ru/" target="_blank" rel="noopener noreferrer">Яндекс.Маркет</a>. Попробуйте пройти по странице с помощью клавиш.</p>
           <p>Хороший пример&nbsp;—&nbsp;<a href="https://www.xbox.com/ru-RU/" target="_blank" rel="noopener noreferrer">сайт <span lang="en">Xbox</span></a>.</p>
           <h2 class="heading-second-lvl">Увеличивайте область клика с помощью <code class="code-heading">padding</code></h2>
-          <p><strong>Оптимальный размер кликабельной области&nbsp;—&nbsp;48×48 px</strong>.</p>
+          <p>Оптимальный размер кликабельной области&nbsp;—&nbsp;48×48 px.</p>
           <p>Особенно это важно делать в меню. Между пунктами меню не должно быть неактивных зазоров, поэтому задавайте одинаковые <code>padding</code> для ссылок слева и справа от них. Для последних и первых можно отменить отступ слева или справа соответственно.</p>
           <h2 class="heading-second-lvl">Используйте <span lang="en">ARIA</span>-роли только тогда, когда это действительно нужно</h2>
           <ul>
-            <li><strong>Лучше никакой <span lang="en">ARIA</span>, чем плохая <span lang="en">ARIA</span></strong>.</li>
+            <li>Лучше никакой <span lang="en">ARIA</span>, чем плохая <span lang="en">ARIA</span>.</li>
             <li>Если используете <span lang="en">ARIA</span>, то не дублируйте уже встроенные в элементы роли.</li>
           </ul>
           <h3 class="heading-third-lvl"><code class="code-heading">role="none"</code> и <code class="code-heading">role="presentation"</code></h3>
@@ -212,7 +212,7 @@
             <li>В атрибуте кратко описывайте то, что делает кнопка или ссылка.</li>
             <li>Атрибут не переводится сервисами автоматического перевода.</li>
           </ul>
-          <p><strong>Отсутствие текста у кнопок и ссылок&nbsp;—&nbsp;критическая ошибка</strong>.</p>
+          <p>Отсутствие текста у кнопок и ссылок&nbsp;—&nbsp;критическая ошибка.</p>
           <h3 class="heading-third-lvl"><code class="code-heading">aria-labelledby</code></h3>
           <p>Атрибут создаёт связь между объектами и их метками.</p>
           <p>Вспомогательные технологии используют его, чтобы собирать все метки в каталог документа, из которого пользователь может перемещаться между ними.</p>
@@ -253,7 +253,7 @@
             <li><code>list-style: none</code> (в <span lang="en">Safari</span>).</li>
           </ul>
           <h3 class="heading-third-lvl"><code class="code-heading">list-style: none</code></h3>
-          <p><strong>В <span lang="en">Safari</span> этот атрибут отменяет семантику списков</strong>.</p>
+          <p>В <span lang="en">Safari</span> этот атрибут отменяет семантику списков.</p>
           <p>Если важно сохранить семантику списка во всех браузерах, то есть три варианта решения.</p>
           <p>Первый вариант&nbsp;—&nbsp;явно задать роль для тегов <code>&lt;ul></code> или <code>&lt;ol></code> с помощью атрибута <code>role="list"</code>. Однако <span lang="en">WAI-ARIA</span> не рекомендует дублировать роли элементов.</p>
           <p>Можно использовать пробел нулевой ширины.</p>
@@ -282,11 +282,11 @@ ol, ul {
             <li>элемент нужно оставить на странице, но скрыть от вспомогательных технологий;</li>
             <li>элемент нужно убрать со страницы, но оставить его доступным для вспомогательных технологий.</li>
           </ul>
-          <p>В зависимости от сценария выберите <b>подходящий метод скрытия элемента</b>.</p>
+          <p>В зависимости от сценария выберите подходящий метод скрытия элемента.</p>
           <p><code>display: none;</code>: элемент не попадает в дерево доступности, скрыт от вспомогательных технологий и пользователей. Работает везде.</p>
           <p>Атрибут <code>hidden</code>: элемент не попадает в дерево доступности, скрыт от вспомогательных технологий и пользователей. Не работает в версиях <span lang="en">IE</span>, ниже 11. Лучше делать фоллбек с помощью <code>display: none;</code>.</p>
           <p><code>visibility: hidden;</code>: элемент не попадает в дерево доступности, скрыт от вспомогательных технологий и пользователей. Работает везде.</p>
-          <p><code>aria-hidden="true"</code>: <b>неинтерактивный элемент</b> не попадает в дерево доступности и скрыт от вспомогательных технологий. Другие пользователи видят элемент. Не работает в версиях <span lang="en">IE</span>, ниже 11.</p>
+          <p><code>aria-hidden="true"</code>: неинтерактивный элемент не попадает в дерево доступности и скрыт от вспомогательных технологий. Другие пользователи видят элемент. Не работает в версиях <span lang="en">IE</span>, ниже 11.</p>
           <p>Класс <code>.visually-hidden</code> или <code>.vh</code>: элемент попадает в дерево доступности и к нему имеют доступ вспомогательные технологии. Другие пользователи не видят элемент. Работает везде.</p>
           <p><code>alt=""</code>: скрывает картинку из дерева доступности. Другие пользователи видят изображение. Работает везде.</p>
           <h3 class="heading-third-lvl">Класс <code class="code-heading">.visually-hidden</code> или <code class="code-heading">.vh</code></h3>
@@ -319,7 +319,7 @@ body:hover .visually-hidden button {
 &lt;/a></code></pre>
           <h2 class="heading-second-lvl">Избегайте авто&shy;воспроизведения видео и фоновых медиа</h2>
           <p>Во-первых, это раздражает, во-вторых, вызывает чувство тревоги и даже паники у некоторых пользователей.</p>
-          <p><b>Золотое правило медиа-контента</b>: дать пользователям возможность самим управлять им.</p>
+          <p>Золотое правило медиа-контента: дать пользователям возможность самим управлять им.</p>
         </main>
       </div>
     </div>
