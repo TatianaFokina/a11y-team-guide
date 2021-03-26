@@ -96,7 +96,6 @@ body {
   line-height: 1.5;
   color: var(--text-color);
   background-color: var(--bg-color);
-  transition: all 0.2s;
 }
 
 @media (min-width: 576px) {
