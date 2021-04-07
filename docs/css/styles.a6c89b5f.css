@@ -322,6 +322,11 @@ figcaption {
   line-height: 1.4;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
 ul {
   list-style-type: square;
 }
